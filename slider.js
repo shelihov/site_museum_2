@@ -5,12 +5,15 @@ if (slider) {
     const sliderDescription = slider.querySelector('.slider-description');
     const prevBtn = slider.querySelector('.slider-prev');
     const nextBtn = slider.querySelector('.slider-next');
+    const modalPrev = document.getElementById('sliderModalPrev');
+    const modalNext = document.getElementById('sliderModalNext');
 
     const images = JSON.parse(slider.dataset.images);
     const descriptions = JSON.parse(slider.dataset.descriptions);
 
     const modal = document.getElementById("sliderModal");
     const modalImage = document.getElementById("sliderModalImage");
+    const modalDescription = document.getElementById("sliderModalDescription");
     const modalClose = document.getElementById("sliderModalClose");
 
     let currentIndex = 0;
@@ -24,6 +27,7 @@ if (slider) {
         modalImage.alt = descriptions[currentIndex];
 
         sliderDescription.textContent = descriptions[currentIndex];
+        modalDescription.textContent = descriptions[currentIndex];
     }
 
     nextBtn.addEventListener('click', function () {
@@ -40,6 +44,17 @@ if (slider) {
         modal.classList.add('open');
         modalImage.src = images[currentIndex];
         modalImage.alt = descriptions[currentIndex];
+        modalDescription.textContent = descriptions[currentIndex];
+    });
+
+    modalPrev.addEventListener('click', function () {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage();
+    });
+
+    modalNext.addEventListener('click', function () {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage();
     });
 
     modalClose.addEventListener('click', function () {

@@ -16,6 +16,8 @@ body {
   color: rgb(170, 217, 243);
   font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
 }
+
+/* Стили для шапки */
 header {
   padding: 0 20px;
 }
@@ -61,6 +63,8 @@ nav ul li:hover a {
   padding: 20px;
 }
 
+/* Стили для зала и списка экспонатов */
+
 .exhibits_hall {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -105,6 +109,7 @@ a.exhibit {
 }
 
 /* Стили для страницы экспоната*/
+
 .exhibit_page {
   max-width: 1200px;
   margin: 0 auto;
@@ -156,6 +161,7 @@ a.exhibit {
 }
 
 /* Стили для слайдера */
+
 .slider {
   position: relative;
   margin: 0px auto;
@@ -178,9 +184,8 @@ a.exhibit {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.631);
   color: #fff;
-  border: none;
   padding: 10px;
   cursor: pointer;
 }
@@ -193,11 +198,13 @@ a.exhibit {
   right: 10px;
 }
 
+/* Стили для модалки-слайдера */
+
 .slider-modal {
   display: none;
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.92);
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -207,16 +214,53 @@ a.exhibit {
   display: flex;
 }
 
+.slider-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
 .slider-modal-image {
-  max-width: 95%;
-  max-height: 95%;
+  display: block;
+  max-width: 90%;
+  max-height: 90vh;
+  margin: 0 auto;
   object-fit: contain;
 }
 
+.slider-modal-btn {
+  position: fixed;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.631);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider-modal-prev {
+  left: 20%;
+}
+
+.slider-modal-next {
+  right: 20%;
+}
+
+.slider-modal-description {
+  margin-top: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
 .slider-modal-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  background: none;
+  border: none;
   font-size: 30px;
   color: #fff;
   cursor: pointer;

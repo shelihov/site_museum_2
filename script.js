@@ -6,5 +6,15 @@ if (headerContainer) {
     .then((response) => response.text())
     .then((data) => {
       headerContainer.innerHTML = data;
-    });
+
+      const burgerBtn = document.getElementById("burgerBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      if (burgerBtn && mainNav) {
+      burgerBtn.addEventListener("click", function () {
+        mainNav.classList.toggle("open");
+      });
+    }
+  });
+
 }

@@ -1,7 +1,20 @@
 /* Убираю отступы для градиента */
+:root {
+  --page-padding: 24px;
+  --page-width: 1200px;
+}
+
+header,
+.exhibit_page,
+main {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+}
+
 html, body {
   margin: 0;
-  padding: 0;
   min-height: 100%;
 }
 
@@ -19,28 +32,60 @@ body {
 
 /* Стили для шапки */
 header {
-  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
+
+header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: rgb(170, 217, 243);
+  cursor: pointer;
+}
+
 nav ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: max-content repeat(5, max-content); */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   gap: 20px;
-  padding: 15px 0;
 }
+
 nav ul li {
-  border: 1px solid rgb(170, 217, 243);
+  border: 1px solid rgba(170, 217, 243, 0.458);
   border-radius: 12px;
   list-style: none;
   overflow: hidden;
   transition: 0.3s;
+  font-size: 15px;
 }
 nav ul li a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 56px;
+  box-sizing: border-box;
+  padding: 10px 14px;
   color: rgb(170, 217, 243);
-  padding: 10px;
   text-decoration: none;
-  font-weight: 500;
 }
 
 nav ul li:hover {
@@ -53,23 +98,53 @@ nav ul li:hover a {
   color: #789cf1;
 }
 
+@media (max-width: 900px) {
+  header {
+    display: block;
+  }
+  .burger {
+    display: block;
+  }
+  .header_top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .nav {
+    display: none;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .nav.open {
+    display: block;
+  }
+  .nav ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr);
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+  }
+  
+}
+
+/* Стили для зала и списка экспонатов */
 .hall-title {
   text-align: center;
-  padding: 15px 15px 0 0;
 }
 
 .hall-about {
   text-align: center;
-  padding: 20px;
 }
-
-/* Стили для зала и списка экспонатов */
 
 .exhibits_hall {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px;
 }
 a.exhibit {
   display: block;
@@ -113,7 +188,6 @@ a.exhibit {
 .exhibit_page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px 80px;
 }
 
 .exhibit_page h1, .exhibit_page h2 {

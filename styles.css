@@ -1,5 +1,5 @@
 /* Убираю отступы для градиента */
-:root {
+/*:root {
   --page-padding: 24px;
   --page-width: 1200px;
 }
@@ -11,7 +11,7 @@ main {
   margin: 0 auto;
   padding-left: var(--page-padding);
   padding-right: var(--page-padding);
-}
+}*/
 
 html, body {
   margin: 0;
@@ -32,10 +32,8 @@ body {
 
 /* Стили для шапки */
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
+  display: block;
+  background-color: #0c0d18b7;
 }
 
 header h1 {
@@ -43,15 +41,14 @@ header h1 {
   margin: 0;
 }
 
-.header_top {
+.header_top{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 20px;
 }
 
 .burger {
-  display: none;
+  display: block;
   background: none;
   border: none;
   font-size: 24px;
@@ -59,12 +56,20 @@ header h1 {
   cursor: pointer;
 }
 
+.nav {
+    display: none;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+.nav.open {
+  display: block;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  /* grid-template-columns: max-content repeat(5, max-content); */
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   gap: 20px;
 }
 
@@ -99,39 +104,11 @@ nav ul li:hover a {
   color: #789cf1;
 }
 
-@media (max-width: 1400px) {
-  header {
-    display: block;
-  }
-  .burger {
-    display: block;
-  }
-  .header_top{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  header h1 {
-    font-size: 18px;
-    margin: 0;
-  }
-  .nav {
-    display: none;
-    width: 100%;
-    margin-top: 12px;
-  }
-  .nav.open {
-    display: block;
-  }
-  .nav ul {
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr);
-    align-items: center;
-    gap: 10px;
-    list-style: none;
-  }
+
+
+
+
   
-}
 /* Стили для хлебных крошек */
 .breadcrumbs ol{
   display: flex;

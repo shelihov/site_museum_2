@@ -2,17 +2,28 @@
 :root {
   --page-padding: 24px;
   --page-width: 1200px;
+  --page-color: rgb(81, 165, 94);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background:
-    radial-gradient(1200px 600px at 20% 10%, rgba(124,58,237,.22), transparent 55%),
+  width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+    /*radial-gradient(1200px 600px at 20% 10%, rgba(124,58,237,.22), transparent 55%),
     radial-gradient(900px 700px at 85% 20%, rgba(6,182,212,.18), transparent 60%),
     radial-gradient(900px 700px at 70% 95%, rgba(34,197,94,.10), transparent 55%),
-    linear-gradient(180deg, #0b060c, #0b1020);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: rgb(170, 217, 243);
+    linear-gradient(180deg, #0b060c, #0b1020);*/
+  color: var(--page-color);
   font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
   
 }
@@ -23,9 +34,20 @@ main {
   padding-right: var(--page-padding);
 }
 /* Стили для шапки */
-header {
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#header > header {
   display: block;
   background-color: #0c0d18b7;
+  backdrop-filter: blur(10px);
+  padding: 12px; 
+}
+
+header {
+  display: block; 
 }
 
 header h1 {
@@ -48,7 +70,7 @@ header h1 {
   background: none;
   border: none;
   font-size: 24px;
-  color: rgb(170, 217, 243);
+  color: var(--page-color);
   cursor: pointer;
 }
 
@@ -75,7 +97,7 @@ nav ul {
 }
 
 nav ul li {
-  border: 1px solid rgba(170, 217, 243, 0.458);
+  border: 1px solid color-mix(in srgb, var(--page-color) 46%, transparent);
   border-radius: 12px;
   list-style: none;
   overflow: hidden;
@@ -88,7 +110,7 @@ nav ul li a {
   min-height: 32px;
   box-sizing: border-box;
   padding: 10px 14px;
-  color: rgb(170, 217, 243);
+  color: var(--page-color);
   text-decoration: none;
 }
 
@@ -124,13 +146,13 @@ nav ul li:hover a {
 }
 a.exhibit {
   display: block;
-  color: rgb(170, 217, 243);
+  color: var(--page-color);
   text-decoration: none;
 }
 .exhibit {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(170, 217, 243);
+  border: 1px solid var(--page-color);
   border-radius: 12px;
   overflow: hidden;
   padding: 15px;
@@ -165,7 +187,7 @@ a.exhibit {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 0;
+  padding-top: 12px;
 }
 .breadcrumbs li {
   display: flex;
@@ -173,7 +195,7 @@ a.exhibit {
   font-size: 14px;
 }
 .breadcrumbs li a {
-  color: rgb(170, 217, 243);
+  color: var(--page-color);
   text-decoration: none;
 }
 .breadcrumbs li:not(:last-child)::after {
@@ -204,9 +226,13 @@ a.exhibit {
   margin-top: 50px;
 }
 
+.exhibit_text{
+  background-color: #0b060c70;
+  border-radius: 16px;
+  padding: 14px;
+}
 .exhibit_text h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
 }
 

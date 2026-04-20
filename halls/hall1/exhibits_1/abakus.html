@@ -74,7 +74,42 @@
                 <iframe src="https://www.youtube.com/embed/jmom9og7ayM" title="Абак"></iframe>
             </div>
         </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Где впервые появился абак?</p>
+                    <label><input type="radio" name="q1" value="a"> Древняя Греция</label>
+                    <label><input type="radio" name="q1" value="b"> Древний Вавилон</label>
+                    <label><input type="radio" name="q1" value="c"> Древний Египет</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Что из себя представляет абак?</p>
+                    <label><input type="radio" name="q2" value="a"> Счетная доска с костяшками</label>
+                    <label><input type="radio" name="q2" value="b"> Палочки с цифрами</label>
+                    <label><input type="radio" name="q2" value="c"> Папирус с математическими формулами</label>
+                </div>
+                <div class="quiz_question" data-answer="c">
+                    <p>Использовался ли абак в России?</p>
+                    <label><input type="radio" name="q3" value="a"> Нет, не использовался</label>
+                    <label><input type="radio" name="q3" value="b"> Да, широко используется до сих пор</label>
+                    <label><input type="radio" name="q3" value="c"> Да, широко использовался до второй половины 20 века</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+                
+            </form>
+        </section>
     </main>
+    <script src="/quiz.js"></script>
     <script src="/slider.js"></script>
     <script src="/script.js"></script>
 </body>

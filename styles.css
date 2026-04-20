@@ -228,8 +228,9 @@ a.exhibit {
 
 .exhibit_text{
   background-color: #0b060c70;
-  border-radius: 16px;
-  padding: 14px;
+  padding: 24px;
+  border: 1px solid color-mix(in srgb, var(--page-color) 45%, transparent);
+  border-radius: 20px;
 }
 .exhibit_text h3 {
   padding-bottom: 10px;
@@ -237,8 +238,7 @@ a.exhibit {
 }
 
 .exhibit_text p {
-  line-height: 1.4;
-  font-size: 16px;
+  font-size: 18px;
   text-indent: 2em;
   text-align: justify;
   margin: 0;
@@ -365,4 +365,85 @@ a.exhibit {
   font-size: 30px;
   color: #fff;
   cursor: pointer;
+}
+
+/* Стили для интерактива - теста*/
+
+.exhibit_quiz{
+  max-width: 860px;
+  margin: 56px auto 0;
+  padding: 24px;
+  border: 1px solid color-mix(in srgb, var(--page-color) 45%, transparent);
+  border-radius: 20px;
+  background-color:  #0b060c70;
+}
+
+.exhibit_quiz h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.quiz{
+  display: grid;
+  gap: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background-color:  #0b060c7a;
+}
+
+.quiz_question {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+}
+
+.quiz_question p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.quiz_question label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.quiz_question.is-correct {
+  border-color: #4caf50;
+  background: rgba(76, 175, 80, 0.12);
+}
+
+.quiz_question.is-wrong {
+  border-color: #d9534f;
+  background: rgba(217, 83, 79, 0.12);
+}
+
+.quiz_actions {
+  display: flex;
+}
+
+.quiz_button {
+  border: 1px solid var(--page-color);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: transparent;
+  color: var(--page-color);
+  font: inherit;
+  cursor: pointer;
+}
+
+.quiz_button-secondary {
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #d7dfd9;
+}
+
+.quiz_result {
+  min-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.quiz_result.is-success {
+  color: #7ee787;
 }

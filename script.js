@@ -18,3 +18,13 @@ if (headerContainer) {
   });
 
 }
+
+const footerContainer = document.getElementById("footer");
+
+if (footerContainer) {
+  fetch("/footer.html")
+  .then((response) => response.text())
+  .then((data) => {
+    footerContainer.innerHTML = data;
+  })
+}

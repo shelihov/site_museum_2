@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зал1/Антикерский механизм</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall1/hall_1.html">Зал 1 — Домеханическая эпоха</a></li>
+                <li aria-current="page">Антикерский механизм</li>
+            </ol>
+        </nav>
+        <h1>Антикерский механизм</h1>
+        <h2>Механический аналоговый вычислитель</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>Артефакт был поднят со дна Эгейского моря греческим водолазом Ликопантисом в 1901 году. Он был найден на затонувшем судне (на глубине от 43 до 62 м) неподалеку от острова Антикитера, который и подарил ему свое имя. Возможно, корабль шёл с острова Родос, где во II веке до нашей эры жил и работал известный греческий астроном и математик Гиппарх Никейский.</p>
+                <p>Первые исследования механизма проводились с 1902 по 1910 и с 1925 по 1930 годы. Уже в ходе первых осмотров прибора стало ясно, что «астролябия», как некоторые изначально называли этот сложный прибор, была гораздо более продвинутой, чем любые известные астролябии. Теофанидис (греческий адмирал) сконструировал первую бронзовую модель астрономических часов, которые показывали некоторые из планет. Но более серьёзные результаты были получены с помощью рентгеновских исследований Дереком Прайсом (британско-американский историк) в 1951—1978 годах. </p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../images_hall1/", 
+                    "../images_hall1/", 
+                    "../images_hall1/"
+                    ]'
+                    data-descriptions='[
+                    "Описание/Автор фото 1",
+                    "Описание/Автор фото 2",
+                    "Описание/Автор фото 3"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall1/" alt="?">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>Механизм представляет собой календарь, а также астрономическое, метеорологическое, образовательное и картографическое устройство, состоящее из 30 бронзовых шестеренок. Это самый древний образец аналогового вычислительного устройства, первая известная механическая Солнечная система, планетарий и астрономические часы.</p>
+                <p>Основными функциями механизма являются: <br>
+                Отображение положения Солнца <br>
+                Отображение положения Луны (включая фазу) <br>
+                Определение солнечных и лунных затмений <br>
+                Определение даты важнейших греческих игр и празднеств: Олимпиады, Наайские игры, Пифийские игры, Немейские игры и Истмийские игры</p>
+                <p>Механизм создавался с тщательно разработанными и изготовленными бронзовыми шестернями с зубьями треугольной формы, созданными для выполнения определённых математических расчётов, позволяющих пользователю найти положение небесных тел на небе. Фактические размеры шестерней оптимизированы для минимизации трения, давая необходимую прочность, позволяющую использовать прибор без прерывания работы и без использования подшипников. При изготовлении механизма были использованы разные сплавы меди с оловом и свинцом. Шестерни сделаны из более твёрдого сплава, зубья закалены. Пластины же механизма, на которых написаны инструкции, были сделаны из более мягкого материала.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <iframe src="https://www.youtube.com/embed/" title="?"></iframe>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Когда был найден антикерский механизм?</p>
+                    <label><input type="radio" name="q1" value="a"> 1900</label>
+                    <label><input type="radio" name="q1" value="b"> 1901</label>
+                    <label><input type="radio" name="q1" value="c"> 1902</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Какую функцию вполнял механизм?</p>
+                    <label><input type="radio" name="q2" value="a"> Отображение положения Солнца и Луны</label>
+                    <label><input type="radio" name="q2" value="b"> Отображение положения полюсов</label>
+                    <label><input type="radio" name="q2" value="c"> Предсказание погоды</label>
+                </div>
+                <div class="quiz_question" data-answer="a">
+                    <p>Конструктивно состоял из: </p>
+                    <label><input type="radio" name="q3" value="a"> Из шестеренок</label>
+                    <label><input type="radio" name="q3" value="b"> Из нитей с костяшками</label>
+                    <label><input type="radio" name="q3" value="c"> Из серебрянных пластин</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Антикитерский_механизм">https://ru.wikipedia.org/wiki/Антикитерский_механизм</a></li>
+                    <li><a href="https://habr.com/ru/companies/ua-hosting/articles/547282/">https://habr.com/ru/companies/ua-hosting/articles/547282/</a></li>
+                </ul>
+            </div>
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall1/exhibits_1/abakus.html">&#10094; Назад "Абак"</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall1/exhibits_1/log.html">&#10095; Далее "Логарифмическая линейка"</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

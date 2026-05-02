@@ -2,7 +2,7 @@
 :root {
   --page-padding: 24px;
   --page-width: 1200px;
-  --page-color: rgb(81, 165, 94);
+  --page-color: #51a55e;
 }
 
 * {
@@ -177,6 +177,9 @@ a.exhibit {
   color: #789cf1;
 }
 
+
+
+
 /* "Стили для страницы экспоната"*/
 /* Стили для хлебных крошек */
 .breadcrumbs ol{
@@ -203,6 +206,9 @@ a.exhibit {
   color: #789cf1;
   text-decoration: underline;
 }
+
+
+
 
 /* Основной контент*/
 .exhibit_page {
@@ -240,7 +246,7 @@ a.exhibit {
   font-size: 18px;
   text-indent: 2em;
   text-align: justify;
-  margin: 0;
+  padding: 6px;
 }
 
 .exhibit_media img, .exhibit_media iframe {
@@ -259,6 +265,9 @@ a.exhibit {
     grid-template-columns: 1fr;
   }
 }
+
+
+
 
 /* Стили для слайдера */
 
@@ -298,8 +307,10 @@ a.exhibit {
   right: 10px;
 }
 
-/* Стили для модалки-слайдера */
 
+
+
+/* Стили для модалки-слайдера */
 .slider-modal {
   display: none;
   position: fixed;
@@ -366,8 +377,10 @@ a.exhibit {
   cursor: pointer;
 }
 
-/* Стили для интерактива - теста*/
 
+
+
+/* Стили для интерактива - теста*/
 .exhibit_quiz{
   max-width: 860px;
   margin: 56px auto 0;
@@ -446,6 +459,48 @@ a.exhibit {
 .quiz_result.is-success {
   color: #7ee787;
 }
+
+
+
+/* Стили для источников и навигации */
+.exhibit_sources {
+  list-style: none;
+  padding-left: 0;
+}
+.exhibit_sources li a {
+  color: var(--page-color);
+  text-decoration: none;
+}
+.exhibit_sources li a:hover {
+  color: #789cf1;
+}
+
+.exhibit_div_buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.exhibit_buttons_prev_next {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #51a55e;
+  text-decoration: none;
+  border: 1px solid #51a55e;
+  border-radius: 12px;
+  text-align: center;
+  transition: background 0.3s, ease, transform 0.3s ease;
+}
+.exhibit_buttons_prev_next:hover, 
+.exhibit_buttons_prev_next:focus {
+  color: #789cf1;
+  border: 1px solid #789cf1;
+  outline: none;
+  transform: translateY(-2px);
+}
+.exhibit_button_prev_next:active {
+    background: #1c4a65;
+}
+
+
 
 /*ФУТЕР*/
 .footer {

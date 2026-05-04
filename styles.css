@@ -129,15 +129,17 @@ nav ul li:hover a {
 /* Стили для зала и списка экспонатов */
 .hall-title {
   text-align: center;
+  padding: 56px 0 12px;
 }
 
 .hall-about {
   text-align: center;
+  padding: 0 0 56px;
 }
 
 .exhibits_hall {
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 a.exhibit {
@@ -155,6 +157,10 @@ a.exhibit {
   background-color: #0b060c;
 }
 
+.exhibit span {
+  font-size: 12px;
+}
+
 .exhibit-hall-image {
   width: 100%;
   height: 200px;
@@ -163,7 +169,7 @@ a.exhibit {
 }
 
 .exhibit h3 {
-  margin: 15px 0 10px;
+  margin: 5px 0 0;
 }
 
 .exhibit p {
@@ -172,8 +178,10 @@ a.exhibit {
 
 .exhibit:hover {
   background-color: #0b060c;
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  transition: 0.3s;
   border: 1px solid #789cf1;
+  box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.591);
   color: #789cf1;
 }
 

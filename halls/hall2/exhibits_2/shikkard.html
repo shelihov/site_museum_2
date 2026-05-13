@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Считающие часы Шиккарда</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall2/hall_2.html">Зал 2 — Механические и электромеханические вычислители</a></li>
+                <li aria-current="page">Считающие часы Шиккарда</li>
+            </ol>
+        </nav>
+        <h1>Считающие часы Шиккарда</h1>
+        <h2>Первый механический калькулятор</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>
+                    В 1623 году, немецкий учёный Вильгельм Шиккард в письме к астроному Иоганну Кеплеру описал и представил чертежи механического вычислительного устройства, которое он назвал «считающими часами». Шиккард создал его для облегчения астрономических расчётов, в которых нуждался его друг, астроном Иоганн Кеплер. Это первое в истории задокументированное устройство такого рода. Однако единственный построенный экземпляр и чертежи сгорели во время Тринадцатилетней войны 1635г. О существовании машины забыли на три столетия, пока письма Шиккарда не были обнаружены в XX веке. По его чертежам в 1960 г. воссоздали действующий образец машины.</p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall2/schickard_icon.png", 
+                    "../images_hall2/schickard1.gif", 
+                    "../images_hall2/schickard2.gif"
+                    ]'
+                    data-descriptions='[
+                    "Считающие часы Шиккарда",
+                    "Копия эскиза",
+                    "Описание механизма часов Шиккарда"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall1/" alt="?">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>
+                    Счетная машина Шиккарда выполняла четыре операции с числами с шестью разрядами и представляла собой три отдельных механизма: суммирующий, множительный и механизм для записи чисел. Суммирующий механизм состоял из двух рядов осей с десятизубчатыми шестеренками, надетыми на них. Верхний ряд содержал шесть осей, на которых находились однозубчатые колесики, диски для набора цифр и барабаны с цифрами в форме цилиндров. В нижнем ряду было всего пять осей, где размещались только десятизубчатые колесики. Чтобы произвести операцию сложения, нужно было последовательно набрать слагаемые, используя специальные диски, а для процесса вычитания – ввести уменьшаемое и вычитаемое. При сложении и вычитании отличие было в том, что диски для набора делали обороты в разные стороны.
+                </p>
+                <p>
+                    Суммирующий аппарат подходил и для деления : с помощью поочередного вычитания двух составляющих операции деления и записи количества произведенных расчетов можно было получить итоговый результат. Для умножения в счетном аппарате Шиккарда использовалась решетчатая система, которая уже была базой для палочек Непера. А третий раздел аппарата предназначался для записи чисел, которые должны были быть не больше шестого разряда. Это можно было сделать с помощью оборотов цилиндров, где следовало установить нужные цифры. Вычисляющие часы Шиккарда заложили фундамент в развитии счетных механизмов. Практическое применение это устройство нашло в научной деятельности астронома и математика Иоаганна Кеплера. В городе Вайль-дер-Штадт, на родине ученого, в доме-музее сохранили копию вычисляющих часов Шиккарда.
+                </p>
+            </div>
+
+            <div class="exhibit_media">
+                <iframe src="https://www.youtube.com/embed/7GFSCbFs5iQ" title="Машина Шиккарда: умножение на двузначное число"></iframe>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="a">
+                    <p>В чем схожесть машины Шиккарда с часами?</p>
+                    <label><input type="radio" name="q1" value="a">Использование часового механизма в работе — системы зубчатых колёс, шестерён и передач</label>
+                    <label><input type="radio" name="q1" value="b">Использование стрелок для отображения точного времени</label>
+                    <label><input type="radio" name="q1" value="c">Машину нужно было заводить маятником, как настенные часы </label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Какие операции могла выполнять машина Шиккарда</p>
+                    <label><input type="radio" name="q2" value="a"> Сложение и вычитание</label>
+                    <label><input type="radio" name="q2" value="b"> Сложение, вычитание и умножение</label>
+                    <label><input type="radio" name="q2" value="c"> Сложение, вычитание, умножение и деление</label>
+                </div>
+                <div class="quiz_question" data-answer="a">
+                    <p>Какую технику позаимствовал Шиккард в своей машине для умножения?</p>
+                    <label><input type="radio" name="q3" value="a"> Метод умножения с помощью "Палочек Непера"</label>
+                    <label><input type="radio" name="q3" value="b"> Передвижение камешков как в абаке</label>
+                    <label><input type="radio" name="q3" value="c"> Метод счёта на пальцах</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://habr.com/ru/companies/rshb/articles/792290/">https://habr.com/ru/companies/rshb/articles/792290/</a></li>
+                    <li><a href="https://calculator888.ru/blog/istoriya/chasi-shikkarda.html">https://calculator888.ru/blog/istoriya/chasi-shikkarda.html</a></li>
+                </ul>
+            </div>
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall1/exhibits_1/log.html">&#10094; Назад "Логарифмическая линейка"</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall2/exhibits_2/pascal.html">&#10095; Далее "Машина Паскаля"</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

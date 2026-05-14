@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разностная машина Бэббиджа</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall2/hall_2.html">Зал 2 — Механические и электромеханические вычислители</a></li>
+                <li aria-current="page">Разностная машина Бэббиджа</li>
+            </ol>
+        </nav>
+        <h1>Разностная машина Бэббиджа (1822)</h1>
+        <h2>Первый шаг к автоматизации сложных математическихвычислений</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>В 1822 году английский математик Чарльз Бэббидж начал разработку своей разностной машины, вдохновлённый идеей автоматизации сложных математических вычислений. Целью было создание механического устройства, способного вычислять полиномиальные функции, что было особенно полезно для астрономических и навигационных расчетов. Эта машина должна была уметь вычислять значения многочленов до шестой степени с точностью до 18-го знака. Несмотря на амбициозность проекта и поддержку со стороны Королевского общества, Бэббидж столкнулся с техническими трудностями и финансовыми проблемами, что привело к тому, что машина так и не была полностью построена при его жизни.</p>
+                <p>Тем не менее, его идеи оказали глубокое влияние на развитие вычислительной техники, и в 1991 году был по чертежам была построена рабочая копия Разностной машины Бэббиджа, которая по сей день находится в Музее Науки в Лондоне.</p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall2/difference_babbage_icon.png", 
+                    "../images_hall2/difference_babbage1.jpg", 
+                    "../images_hall2/difference_babbage3.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Часть разностной машины Чарльза Бэббиджа, собранной в 1832году, демонстрируется в Южном Кенсингтонском музее",
+                    "Действующая копия Разностной машины № 2 Чарльза Бэббиджа в Музее Науки, Лондон",
+                    ""
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall1/" alt="?">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>Принцип работы основан на методе конечных разностей, который позволяет вычислять значения полиномиальных функций с помощью последовательных операций сложения, без использования умножения и деления. Машина хранит значения функции и её разностей в отдельных механических колонках и при каждом шаге добавляет разности друг к другу, получая новое значение функции. Благодаря системе шестерёнок и валов вычисления выполняются автоматически.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <iframe src="https://www.youtube.com/embed/be1EM3gQkAY" title="Разностная машина Бэббиджа"></iframe>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Какой принцип использовала разностная машина для вычислений?</p>
+                    <label><input type="radio" name="q1" value="a">Электронные схемы</label>
+                    <label><input type="radio" name="q1" value="b">Метод конечных разностей</label>
+                    <label><input type="radio" name="q1" value="c">Двоичную систему счисления</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Из каких элементов в основном состояла разностная машина?</p>
+                    <label><input type="radio" name="q2" value="a">Из электронных микросхем</label>
+                    <label><input type="radio" name="q2" value="b">Из магнитных лент</label>
+                    <label><input type="radio" name="q2" value="c">Из зубчатых колёс и механических деталей</label>
+                </div>
+                <div class="quiz_question" data-answer="c">
+                    <p>Почему разностную машину не удалось полностью построить при жизни Бэббиджа?</p>
+                    <label><input type="radio" name="q3" value="a">Машина была создана при жизни Бэббиджа</label>
+                    <label><input type="radio" name="q3" value="b">Создание было запрещено законом</label>
+                    <label><input type="radio" name="q3" value="c">Не хватало технологий и финансирования</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Разностная_машина_Чарльза_Бэббиджа">https://ru.wikipedia.org/wiki/Разностная_машина_Чарльза_Бэббиджа</a></li>
+                </ul>
+            </div>
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall2/exhibits_2/jacquard.html">&#10094; Назад "Ткацкий станок Жаккара"</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall2/exhibits_2/analytical_babbage.html">&#10095; Далее "Аналитическая машина Бэббиджа"</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

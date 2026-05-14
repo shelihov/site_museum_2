@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зал1/Абак</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall1/hall_1.html">Зал 1 — Домеханическая эпоха</a></li>
+                <li aria-current="page">?</li>
+            </ol>
+        </nav>
+        <h1>Заголовок</h1>
+        <h2>Подзаголовок</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>Съешь ещё этих мягких французских булок, да выпей чаю</p>
+                <p>Съешь ещё этих мягких французских булок, да выпей чаю</p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../images_hall1/", 
+                    "../images_hall1/", 
+                    "../images_hall1/"
+                    ]'
+                    data-descriptions='[
+                    "Описание/Автор фото 1",
+                    "Описание/Автор фото 2",
+                    "Описание/Автор фото 3"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall1/" alt="?">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>Съешь ещё этих мягких французских булок, да выпей чаю</p>
+                <p>Съешь ещё этих мягких французских булок, да выпей чаю</p>
+            </div>
+
+            <div class="exhibit_media">
+                <iframe src="https://www.youtube.com/embed/" title="?"></iframe>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Вопрос 1</p>
+                    <label><input type="radio" name="q1" value="a"> Ответ</label>
+                    <label><input type="radio" name="q1" value="b"> Ответ</label>
+                    <label><input type="radio" name="q1" value="c"> Ответ</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Вопрос 2</p>
+                    <label><input type="radio" name="q2" value="a"> Ответ</label>
+                    <label><input type="radio" name="q2" value="b"> Ответ</label>
+                    <label><input type="radio" name="q2" value="c"> Ответ</label>
+                </div>
+                <div class="quiz_question" data-answer="c">
+                    <p>Вопрос 3</p>
+                    <label><input type="radio" name="q3" value="a"> Ответ</label>
+                    <label><input type="radio" name="q3" value="b"> Ответ</label>
+                    <label><input type="radio" name="q3" value="c"> Ответ</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Абак?">https://ru.wikipedia.org/wiki/Абак</a></li>
+                </ul>
+            </div>
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall1/hall_1.html">&#10094; Назад</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall1/hall_1.html">&#10095; Далее </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

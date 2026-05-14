@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арифмометр Лейбница</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall2/hall_2.html">Зал 2 — Механические и электромеханические вычислители</a></li>
+                <li aria-current="page">Арифмометр Лейбница</li>
+            </ol>
+        </nav>
+        <h1>Арифмометр Лейбница</h1>
+        <h2>Механический калькулятор, способный выполнять все четыре арифметических действия</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>В 1673 году немецкий философ и математик Готфрид Вильгельм Лейбниц, представил в Парижской академии наук прототип своей вычислительной машины, стремясь избавить ученых от длительных вычислений: («Поскольку это недостойно таких замечательных людей, подобно рабам, терять время на вычислительную работу, которую можно было бы доверить кому угодно при использовании машины»). Он был вдохновлён «Паскалиной», но считал её устройство ограниченным, так как оно могло лишь складывать и вычитать. Лейбниц поставил перед собой амбициозную задачу — создать машину, способную выполнять все четыре арифметических действия.</p>
+                <p>Работу над усовершенствованием механизма он продолжал до 1694 года, создав более надёжный и эффективный вариант, который стал ключевым прорывом в механизации вычислений. Машина была продемонстрирована Лейбницем во Французской академии наук и Лондонском королевском обществе. Один экземпляр арифмометра попал к Петру Первому.</p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall2/leibnitz_icon.png", 
+                    "../images_hall2/leibnitz1.gif", 
+                    "../images_hall2/leibnitz2.gif"
+                    ]'
+                    data-descriptions='[
+                    "Арифмомент Лейбница — Национальная библиотека Нижней Саксонии, Ганновер. Из двух построенных в конце XVII — начале XVIII века образцов до наших дней дошел только этот. В 1879 году рабочие случайно нашли его на чердаке одного из зданий Гёттингенского университета, после чего он был передан на хранение в Ганновер.",
+                    "Схема устройства арифмометра Лейбница.",
+                    "Механизм работы ступенчатого колеса Лейбница, который позволял выполнять операции умножения и деления при помощи повторного сложения."
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../icon_hall2/leibnitz_icon.png" alt="Арифмометр Лейбница">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>Сложение чисел выполнялось в десятичной системе счисления при помощи связанных друг с другом колёс, все так же, как и в Паскалине. Добавленная в конструкцию движущаяся часть и специальная рукоятка, позволявшая крутить ступенчатое колесо Лейбница (в последующих вариантах машины — цилиндры), позволяли ускорить повторяющиеся операции сложения, при помощи которых выполнялось деление и перемножение чисел. Необходимое число повторных сложений выполнялось автоматически.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <iframe src="https://www.youtube.com/embed/NJamYfjVRbA" title="Демонстрация работы арифмометра Лейбница"></iframe>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="a">
+                    <p>Какое главное улучшение было в арифмометре Лейбница по сравнению с машиной Паскаля?</p>
+                    <label><input type="radio" name="q1" value="a">Возможность выполнять умножение и деление автоматически</label>
+                    <label><input type="radio" name="q1" value="b">Использование перфокарт</label>
+                    <label><input type="radio" name="q1" value="c">Подключение к электричеству</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Какой механизм использовался в арифмометре Лейбница?</p>
+                    <label><input type="radio" name="q2" value="a">Паровой двигатель</label>
+                    <label><input type="radio" name="q2" value="b">Магнитный диск</label>
+                    <label><input type="radio" name="q2" value="c">Ступенчатый вал</label>
+                </div>
+                <div class="quiz_question" data-answer="a">
+                    <p>В каком году был изобретен арифмометр Лейбница?</p>
+                    <label><input type="radio" name="q3" value="a"> 1673</label>
+                    <label><input type="radio" name="q3" value="b"> 1642</label>
+                    <label><input type="radio" name="q3" value="c"> 1822</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Арифмометр_Лейбница">https://ru.wikipedia.org/wiki/Арифмометр_Лейбница</a></li>
+                </ul>
+            </div>
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall2/exhibits_2/pascal.html">&#10094; Назад "Машина Паскаля"</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall2/exhibits_2/jacquard.html">&#10095; Далее "Ткацкий станок Жаккара"</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

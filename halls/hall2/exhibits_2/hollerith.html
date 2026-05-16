@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Табулятор Холлерита</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall2/hall_2.html">Зал 2 — Механические и электромеханические вычислители</a></li>
+                <li aria-current="page">Табулятор Холлерита</li>
+            </ol>
+        </nav>
+        <h1>Табулятор Холлерита</h1>
+        <h2>История создания и значение</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>Первый статистический табулятор был построен американцем Германом Холлеритом в 1888 году, для обработки результатов переписи населения. Он был вдохновлен кондукторами, использовавшими отверстия, пробитые в разных местах на железнодорожном билете для записи сведений о путешественнике, таких как пол и приблизительный возраст, изобрел запись данных на машиночитаемом носителе. Раньше машиночитаемые носители использовались для списков инструкций (не данных) для управления программируемыми машинами, такими как жаккардовые ткацкие станки.</p>
+                <p>В 1890 году Холлерит полностью закончил работу над табулятором, что обеспечило оптимизацию проведения переписи населения в 1890 году, по данным Бюро переписи населения США, результаты переписи были «… завершены на несколько месяцев раньше срока и с расходами намного меньше запланированного бюджета». Преимущества технологии для целей бухгалтерского и складского учета были очевидны. В 1896 году он учредил компанию Tabulating Machine Company. Партия табуляторов была также закуплена Российской империей для обработки результатов переписи населения 1897 года. Этому предприятию сопутствовал успех. С годами оно претерпело ряд изменений — слияний и переименований. С 1924 года фирма Холлерита стала называться IBM.</p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall2/hollerith_icon.png", 
+                    "../images_hall2/hollerith1.png", 
+                    "../images_hall2/hollerith2.png"
+                    ]'
+                    data-descriptions='[
+                    "Табулятор Холерита образца 1890 г., находится в Политехническом музее в г. Москве. Фото:  Политехнический музей, Москва",
+                    "Герман Холлерит демонстрирует работу табулятора в Бюро переписи населения США, ок. 1890 г. Источник: Бюро переписи США.",
+                    "Обложка журнала Scientific American от 30 августа 1890 года, посвящённая использованию табуляторов Холлерита на переписи населения в США."
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall1/" alt="?">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>Холлерит использовал перфокарты с круглыми отверстиями, 12 рядами и 24 столбцами. Карты имели размеры 3-1/4 дюйма на 6-5/8 дюйма[8]. Его табулятор использовал электромеханические соленоиды для увеличения значений механических счетчиков. Набор подпружиненных проводов был подвешен над считывателем карт. Карта располагалась над лужами ртути, соответствующими возможным позициям отверстий в карте. Когда провода были прижаты к карте, перфорированные отверстия позволяли проводам погружаться в лужицы ртути, создавая электрический контакт, который можно было использовать для подсчета, сортировки и включения звонка, чтобы сообщить оператору, что карта была прочитана. Табулятор имел 40 счетчиков, каждый с циферблатом, разделенным на 100 делений, с двумя стрелками-индикаторами; один шагал на одну единицу с каждым счетным импульсом, другой продвигался на одну единицу каждый раз, когда другой циферблат делал полный оборот. Такое расположение позволяло насчитывать до 9999. Во время данного прогона табулирования счетчики могут быть назначены определенному отверстию или, используя релейную логику, комбинации отверстий, например, для подсчета замужних женщин. Если карту нужно было отсортировать, крышка отсека сортировочного ящика открывалась для хранения карты, выбор отсека зависел от данных на карте.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <iframe src="https://www.youtube.com/embed/9HXjLW7v-II" title="Табулятор Холерита в Музее Вычислительной техники Кремниевой долины"></iframe>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Для чего использовался табулятор Холлерита?</p>
+                    <label><input type="radio" name="q1" value="a"> Для математических расчетов</label>
+                    <label><input type="radio" name="q1" value="b"> Для обработки данных переписи населения</label>
+                    <label><input type="radio" name="q1" value="c"> Для слежения за небом</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Кто первый придумал использовать перфокарты?</p>
+                    <label><input type="radio" name="q2" value="a"> Жаккар</label>
+                    <label><input type="radio" name="q2" value="b"> Холлерит</label>
+                    <label><input type="radio" name="q2" value="c"> Паскаль</label>
+                </div>
+                <div class="quiz_question" data-answer="c">
+                    <p>Произовдство табуляторов стало основой для создания:</p>
+                    <label><input type="radio" name="q3" value="a"> Google</label>
+                    <label><input type="radio" name="q3" value="b"> Microsoft</label>
+                    <label><input type="radio" name="q3" value="c"> IBM</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Табулятор_Холлерита">https://ru.wikipedia.org/wiki/Табулятор_Холлерита</a></li>
+                    <li><a href="https://habr.com/ru/articles/791990/">https://habr.com/ru/articles/791990/</a></li>
+                </ul>
+            </div>
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall2/exhibits_2/analytical_babbage.html">&#10094; Назад "Аналитическая машина Бэббиджа"</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall2/exhibits_2/zuse.html">&#10095; Далее "Вычислительные машины Цузе"</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

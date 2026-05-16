@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вычислительные машины Конрада Цузе</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall1/hall_1.html">Зал 1 — Механические и электромеханические вычислители</a></li>
+                <li aria-current="page">Вычислительные машины Конрада Цузе</li>
+            </ol>
+        </nav>
+        <h1>Вычислительные машины Конрада Цузе</h1>
+        <h2>Подзаголовок</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>Вычислительные машины были разработаны немецким инженером Конрадом Цузе в Германии в конце 1930-х — 1940-х годах. Первую машину Z1 он построил в 1936–1938 годах у себя дома в Берлине, создавая её почти полностью самостоятельно для автоматизации инженерных расчётов. В 1939 году появилась Z2, в которой впервые были использованы электромеханические реле, что повысило надёжность работы машины. В 1941 году была создана Z3 — первая полностью работоспособная программируемая вычислительная машина, выполнявшая вычисления автоматически по программе. Она использовалась для инженерных расчётов, но была уничтожена во время бомбардировок Берлина. Последней машиной этой серии стала Z4, завершённая в 1945 году; её удалось сохранить, и позже она использовалась для научных расчётов в Швейцарии.</p>
+                <p>Цузе продолжал работать над развитием своих машин, но из-за изоляции Германии во время Второй мировой войны его разработки не получили широкого признания за пределами страны, хотя впоследствии они оказали значительное влияние на развитие компьютерной техники.</p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall2/zuse_icon.png", 
+                    "../images_hall2/zuse1.jpg", 
+                    "../images_hall2/zuse2.jpg",
+                    "../images_hall2/zuse3.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Конрад Цузе демонстрирует только что завершенную и полностью рабочую реконструкцию своего первого компьютера Z1, 1989 г. Фото: Deutsches Technikmuseum, Berlin^ Germany.",
+                    "Устройство Z2. В отличие от полностью механического Z1, здесь использовалась комбинация механики и электротехники.",
+                    "Копия Z3 в Немецком музее в Мюнхене, Германия. Фото: Venusianer, CC BY-SA 3.0, Wikimedia Commons",
+                    "Единственный Z4 находится в Немецком музее в Мюнхене, Германия. Фото: Clemens PFEIFFER. CANON PowerShot G7, CC BY 2.5, Wikimedia Commons"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall1/" alt="?">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>Первая машина, Z1 (1936-1938), была механической и использовала металлические пластины для хранения данных. Она могла выполнять базовые арифметические операции и была программируемой с помощью перфокарт.</p>
+                <p>Вторая машина, Z2 (1939), была электромеханической, с улучшенной архитектурой и большей надежностью.</p>
+                <p>Третья машина, Z3 (1941), стала первым в мире полностью функциональным программируемым компьютером, использующим реле для логических операций и двоичную систему счисления.</p>
+                <p>Цузе продолжил разработку, создав Z4, который был завершен в 1945 году и стал первым коммерчески доступным компьютером. Хоть его машины не были широко известны за пределами Германии во время Второй мировой, позже они оказали значительное влияние на развитие компьютерной техники.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <iframe src="https://www.youtube.com/embed/duOBNyUdT2M" title="Z1"></iframe>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="c">
+                    <p>Какая модель компьютера Цузе считается первым в мире полностью рабочим программируемым цифровым компьютером?</p>
+                    <label><input type="radio" name="q1" value="a"> Z1</label>
+                    <label><input type="radio" name="q1" value="b"> Z2</label>
+                    <label><input type="radio" name="q1" value="c"> Z3</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>По какому принципу Конрад Цузе давал названия своим первым четырем компьютерам (Z1, Z2, Z3, Z4)?</p>
+                    <label><input type="radio" name="q2" value="a"> По названию города Цюрих (Zurich)</label>
+                    <label><input type="radio" name="q2" value="b"> По первой букве своей фамилии (Zuse)</label>
+                    <label><input type="radio" name="q2" value="c"> В честь своей любимой музыкальной ноты</label>
+                </div>
+                <div class="quiz_question" data-answer="c">
+                    <p>Какая из машин Цузе вошла в историю как первый в мире коммерческий компьютер?</p>
+                    <label><input type="radio" name="q3" value="a"> Z2</label>
+                    <label><input type="radio" name="q3" value="b"> Z3</label>
+                    <label><input type="radio" name="q3" value="c"> Z4</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Z1_(вычислительная_машина)">https://ru.wikipedia.org/wiki/Z1_(вычислительная_машина)</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Z2">https://ru.wikipedia.org/wiki/Z2</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Z3">https://ru.wikipedia.org/wiki/Z3</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Z4">https://ru.wikipedia.org/wiki/Z4</a></li>
+                    <li><a href="https://habr.com/ru/articles/210412/">https://habr.com/ru/articles/210412/</a></li>
+                </ul>
+            </div>
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall2/exhibits_2/hollerith.html">&#10094; Назад "Табулятор Холлерита"</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/hall_3.html">&#10095; Далее "Зал 3 - Поколения ЭВМ"</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

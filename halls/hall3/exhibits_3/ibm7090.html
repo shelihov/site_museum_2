@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM 7090</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>2 поколение</li>
+                <li aria-current="page">IBM 7090</li>
+            </ol>
+        </nav>
+
+        <h1>IBM 7090 (1959 г.)</h1>
+        <h2>Транзисторный мейнфрейм для науки, космоса и первых экспериментов с разделением времени.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>IBM 7090 появился в конце 1950-х как развитие лампового IBM 709. Компания фактически взяла уже существующую архитектуру и полностью перевела её на транзисторы. Машина стала быстрее, холоднее и заметно надёжнее — именно этого тогда не хватало вычислительным центрам.</p>
+
+                <p>7090 создавался прежде всего для научных организаций. Его использовали в аэрокосмической отрасли, ядерных исследованиях, метеорологии и математическом моделировании. Одним из крупнейших заказчиков стала NASA: машина участвовала в расчётах программ Mercury и Gemini.</p>
+
+                <p>IBM активно продвигала систему как «научный суперкомпьютер» своего времени. В начале 1960-х это была одна из самых производительных коммерческих ЭВМ в мире. Некоторые университеты бронировали машинное время на недели вперёд.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/ibm7090_icon.jpeg",
+                    "../images_hall3/ibm7090_1.jpg",
+                    "../images_hall3/ibm7090_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "IBM 7090 в вычислительном центре NASA.",
+                    "Консоль IBM 7090 в музее вычислительной техники. Фото: ArnoldReinhold / Wikimedia Commons",
+                    "Фото с сайта аукциона Christie’s, где продавался один из сохранившихся экземпляров IBM 7090"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/ibm7090_1.jpg" alt="IBM 7090">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и особенности</h3>
+
+                <p>Главным отличием IBM 7090 от предыдущего поколения стала транзисторная элементная база. Машина потребляла меньше энергии, выделяла меньше тепла и могла работать значительно стабильнее ламповых систем.</p>
+
+                <p>Компьютер использовал 36-битную архитектуру и был оптимизирован под научные вычисления с плавающей запятой. Производительность достигала примерно 100 тысяч операций в секунду — огромная цифра для конца 1950-х.</p>
+
+                <p>Ввод данных выполнялся через перфокарты и магнитные ленты. В крупных вычислительных центрах рядом с IBM 7090 работали целые команды операторов: одни готовили карты, другие контролировали выполнение заданий, третьи разбирали распечатки результатов.</p>
+
+                <p>На IBM 7090 появилась одна из ранних систем разделения времени — CTSS из MIT. Она позволяла нескольким пользователям одновременно работать с машиной через терминалы. Для начала 1960-х это выглядело почти фантастикой: компьютер переставал быть устройством для одного оператора.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/SOQ6F7HMfSc" title="IBM 7090 and early computing history"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Значение</h3>
+                    <p>IBM 7090 стал одной из самых успешных коммерческих ЭВМ своего времени. Он помог NASA в подготовке первых пилотируемых космических полётов, участвовал в ядерных исследованиях и моделировании климата.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Какое главное отличие IBM 7090 от прошлых моделей IBM?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Использование графического интерфейса</label>
+                    <label><input type="radio" name="q1" value="b"> Переход на транзисторы</label>
+                    <label><input type="radio" name="q1" value="c"> Работа от батарей</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Какая организация активно использовала IBM 7090?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Nintendo</label>
+                    <label><input type="radio" name="q2" value="b"> CERN</label>
+                    <label><input type="radio" name="q2" value="c"> NASA</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Какая известная система разделения времени работала на IBM 7090?</p>
+
+                    <label><input type="radio" name="q3" value="a"> CTSS</label>
+                    <label><input type="radio" name="q3" value="b"> MS-DOS</label>
+                    <label><input type="radio" name="q3" value="c"> UNIX System V</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/IBM_7090">https://ru.wikipedia.org/wiki/IBM_7090</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/IBM_7090">https://en.wikipedia.org/wiki/IBM_7090</a></li>
+                    <li><a href="https://www.columbia.edu/cu/computinghistory/7090.html">https://www.columbia.edu/cu/computinghistory/7090.html</a></li>
+                    <li><a href="https://habr.com/ru/companies/mclouds/articles/842470/">https://habr.com/ru/companies/mclouds/articles/842470/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/besm.html">
+                        &#10094; Назад "БЭСМ"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/cdc1604.html">
+                        &#10095; Далее "CDC 1604"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Суперкомпьютеры</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall4/hall_4.html">Зал 4 — Классификация современных вычислительных систем</a></li>
+                <li aria-current="page">Суперкомпьютеры</li>
+            </ol>
+        </nav>
+
+        <h1>Суперкомпьютеры</h1>
+        <h2>Машины, которые считают климат, материалы, ядерные процессы, аэродинамику и нейросети быстрее, чем это возможно на обычных серверах.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Что это такое</h3>
+
+                <p>Суперкомпьютер — это не просто «очень мощный компьютер». Обычно это целый вычислительный комплекс: тысячи процессоров и графических ускорителей, скоростная сеть, параллельная файловая система, жидкостное охлаждение и отдельная команда инженеров.</p>
+
+                <p>Главная идея суперкомпьютера — параллельность. Большая задача разбивается на множество маленьких фрагментов, которые одновременно выполняются на разных узлах. Так моделируют погоду, взрывные процессы, поведение белков, плазму в термоядерных установках и движение воздуха вокруг самолёта.</p>
+
+                <p>Современные лидеры перешли в экзафлопсный диапазон: это больше 10<sup>18</sup> операций с плавающей запятой в секунду. По данным TOP500, в конце 2025 года список возглавляли El Capitan, Frontier и Aurora — все три системы установлены в лабораториях Министерства энергетики США.  [oai_citation:0‡top500.org](https://www.top500.org/lists/top500/2025/11/?utm_source=chatgpt.com)</p>
+
+                <p>При этом гонка идёт не только за скоростью. Энергопотребление стало таким важным ограничением, что эффективность на ватт иногда важнее «сырой» производительности. Без продуманного охлаждения и энергопитания суперкомпьютер быстро превращается в дорогой нагреватель.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall4/supercomputers_icon.jpg",
+                    "../images_hall4/supercomputers_1.jpg",
+                    "../images_hall4/supercomputers_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Зал современного суперкомпьютера с рядами вычислительных стоек",
+                    "Узел суперкомпьютера с процессорами, ускорителями и системой жидкостного охлаждения",
+                    "Инженерное обслуживание суперкомпьютерного комплекса в дата-центре"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall4/supercomputers_1.jpg" alt="Суперкомпьютеры">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как устроены</h3>
+
+                <p>Типичный суперкомпьютер состоит из вычислительных узлов. Каждый узел похож на мощный сервер: несколько CPU, графические ускорители или специализированные чипы, оперативная память и сетевой адаптер. Узлы соединены очень быстрой сетью с минимальными задержками.</p>
+
+                <p>Для задач искусственного интеллекта и моделирования всё чаще используют GPU. Они выполняют тысячи однотипных операций параллельно и хорошо подходят для матриц, симуляций и обучения больших моделей.</p>
+
+                <p>Данные хранятся в параллельных файловых системах. Обычный диск здесь не справился бы: расчёт может одновременно читать и записывать терабайты данных с сотен узлов.</p>
+
+                <p>Охлаждение — отдельная инженерная задача. Например, El Capitan использует прямое жидкостное охлаждение и достигает 1,809 экзафлопс в тесте HPL; система установлена в Ливерморской национальной лаборатории и применяется для сложных моделирований, включая задачи ядерной безопасности.  [oai_citation:1‡llnl.gov](https://www.llnl.gov/news/highlights/el-capitan-high-performance-computing?utm_source=chatgpt.com)</p>
+
+                <p>Пользователь обычно не работает с суперкомпьютером напрямую как с обычным ПК. Он отправляет задание в очередь, указывает число узлов и время работы, а планировщик распределяет ресурсы между проектами.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/Ny_NvpuaAiQ" title="Frontier supercomputer"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Frontier в Oak Ridge стал первым официально признанным экзафлопсным суперкомпьютером и открыл новую планку производительности для научных расчётов.  [oai_citation:2‡olcf.ornl.gov](https://www.olcf.ornl.gov/frontier/?utm_source=chatgpt.com)</p>
+
+                    <p>Суперкомпьютеры редко работают «на одной задаче». Обычно на них одновременно идут десятки проектов: климат, медицина, материалы, физика, энергетика и машинное обучение.</p>
+
+                    <p>Рейтинг TOP500 измеряет производительность через тест LINPACK, но реальная скорость зависит от задачи. Машина может быть рекордной в рейтинге и не всегда лучшей для конкретного научного кода.</p>
+
+                    <p>Срок жизни суперкомпьютера обычно короче, чем у обычной инфраструктуры: через несколько лет его начинают вытеснять новые процессоры, ускорители и стандарты памяти.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Что лежит в основе работы суперкомпьютеров?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Только высокая частота одного процессора</label>
+                    <label><input type="radio" name="q1" value="b"> Параллельное выполнение задач на множестве узлов</label>
+                    <label><input type="radio" name="q1" value="c"> Использование только жёстких дисков</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Что означает уровень экзафлопс?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Тысячи операций в секунду</label>
+                    <label><input type="radio" name="q2" value="b"> Миллионы операций в секунду</label>
+                    <label><input type="radio" name="q2" value="c"> Более 10^18 операций с плавающей запятой в секунду</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Почему для суперкомпьютеров важно охлаждение?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Тысячи чипов выделяют огромное количество тепла</label>
+                    <label><input type="radio" name="q3" value="b"> Охлаждение нужно только для мониторов</label>
+                    <label><input type="radio" name="q3" value="c"> Так быстрее печатаются документы</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://top500.org/lists/top500/2025/11/">https://top500.org/lists/top500/2025/11/</a></li>
+                    <li><a href="https://www.olcf.ornl.gov/frontier/">https://www.olcf.ornl.gov/frontier/</a></li>
+                    <li><a href="https://www.llnl.gov/news/highlights/el-capitan-high-performance-computing">https://www.llnl.gov/news/highlights/el-capitan-high-performance-computing</a></li>
+                    <li><a href="https://www.hpe.com/se/en/compute/hpc/lawrence-livermore-national-laboratory.html">https://www.hpe.com/se/en/compute/hpc/lawrence-livermore-national-laboratory.html</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/hall_4.html">
+                        &#10094; Назад "Зал 4"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/servers.html">
+                        &#10095; Далее "Серверы"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

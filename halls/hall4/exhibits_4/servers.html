@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серверы</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall4/hall_4.html">Зал 4 — Классификация современных вычислительных систем</a></li>
+                <li aria-current="page">Серверы</li>
+            </ol>
+        </nav>
+
+        <h1>Серверы</h1>
+        <h2>Компьютеры, которые незаметно держат сайты, облака, базы данных, игры, корпоративные сети и почти всю цифровую инфраструктуру вокруг нас.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Что это такое</h3>
+
+                <p>Сервер — это компьютер, рассчитанный на постоянную работу и обслуживание запросов других устройств. Он может хранить сайт, выдавать файлы, обрабатывать платежи, запускать виртуальные машины или держать базу данных интернет-магазина.</p>
+
+                <p>В отличие от обычного ПК, сервер проектируют не ради удобства одного пользователя, а ради надёжности, предсказуемости и обслуживания множества клиентов одновременно. Поэтому в нём важны резервные блоки питания, память с коррекцией ошибок, удалённое управление и быстрый доступ к накопителям.</p>
+
+                <p>Современные серверы редко стоят по одному. Обычно они размещаются в стойках дата-центра: десятки одинаковых машин соединены сетью, охлаждаются общей системой и управляются как единая инфраструктура.</p>
+
+                <p>Формально сервером может быть даже маленький домашний компьютер с Linux. Но в промышленном смысле сервер — это система, рассчитанная на круглосуточную нагрузку, обслуживание и быстрый ремонт без полной остановки сервиса.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall4/servers_icon.jpg",
+                    "../images_hall4/servers_1.jpg",
+                    "../images_hall4/servers_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Ряды серверных стоек в современном дата-центре",
+                    "Стоечный сервер с несколькими накопителями и горячей заменой дисков",
+                    "Инженер обслуживает серверную инфраструктуру без остановки оборудования"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall4/servers_1.jpg" alt="Серверы">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как устроены</h3>
+
+                <p>Классический сервер использует один или несколько процессоров, большой объём оперативной памяти, сетевые адаптеры и массив накопителей. Важная часть конструкции — не только производительность, но и возможность заменить неисправный компонент быстро и без сложной разборки.</p>
+
+                <p>Многие серверы выполнены в стоечном формате. Обозначения 1U, 2U или 4U показывают высоту корпуса в серверной стойке. Тонкие 1U-серверы экономят место, а более крупные корпуса позволяют установить больше дисков, видеокарт или систем охлаждения.</p>
+
+                <p>Серверная память часто поддерживает ECC — коррекцию ошибок. Это помогает обнаруживать и исправлять случайные сбои в битах памяти, которые в обычном ПК могли бы просто привести к зависанию или повреждению данных.</p>
+
+                <p>Накопители обычно объединяются в RAID-массивы. Если один диск выходит из строя, данные не исчезают сразу, а администратор может заменить накопитель и восстановить массив.</p>
+
+                <p>Для удалённого управления используют специальные контроллеры: например, iDRAC, iLO или IPMI. Они позволяют включить сервер, посмотреть температуру, открыть консоль и переустановить систему даже без физического доступа к машине.</p>
+
+                <p>В крупных дата-центрах серверы часто работают не как отдельные «компьютеры», а как ресурс для виртуализации. Один физический сервер может запускать десятки виртуальных машин или контейнеров для разных клиентов и сервисов.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/JP1O5fX4l5Y" title="How servers work"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Многие серверы можно обслуживать «на горячую»: заменить диск, блок питания или вентилятор, пока система продолжает работать.</p>
+
+                    <p>В дата-центрах воздух часто движется по схеме «холодный коридор — горячий коридор»: так проще отделять входящий холодный поток от нагретого воздуха за стойками.</p>
+
+                    <p>Серверы не всегда мощнее игровых ПК по одному компоненту, но обычно намного надёжнее при длительной нагрузке.</p>
+
+                    <p>Крупные облачные провайдеры используют не только стандартные серверы, но и собственные платы, корпуса и системы питания, разработанные под конкретный дата-центр.</p>
+
+                    <p>Чем больше сервис зависит от задержки, тем важнее расположение сервера: поэтому игровые, финансовые и стриминговые платформы размещают узлы ближе к пользователям.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Для чего в сервере используют ECC-память?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Для цветной подсветки корпуса</label>
+                    <label><input type="radio" name="q1" value="b"> Для обнаружения и исправления ошибок памяти</label>
+                    <label><input type="radio" name="q1" value="c"> Для подключения монитора</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Что означает формат 1U или 2U?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Высоту сервера в стойке</label>
+                    <label><input type="radio" name="q2" value="b"> Количество операционных систем</label>
+                    <label><input type="radio" name="q2" value="c"> Скорость интернета</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Зачем серверам нужны контроллеры удалённого управления?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Чтобы запускать компьютерные игры</label>
+                    <label><input type="radio" name="q3" value="b"> Чтобы менять цвет корпуса</label>
+                    <label><input type="radio" name="q3" value="c"> Чтобы обслуживать сервер без физического доступа</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Сервер_(аппаратное_обеспечение)">https://ru.wikipedia.org/wiki/Сервер_(аппаратное_обеспечение)</a></li>
+                    <li><a href="https://www.hpe.com/us/en/what-is/server.html">https://www.hpe.com/us/en/what-is/server.html</a></li>
+                    <li><a href="https://www.dell.com/en-us/lp/dt/servers">https://www.dell.com/en-us/lp/dt/servers</a></li>
+                    <li><a href="https://www.opencompute.org/">https://www.opencompute.org/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/supercomputers.html">
+                        &#10094; Назад "Суперкомпьютеры"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/pc.html">
+                        &#10095; Далее "Персональные компьютеры"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

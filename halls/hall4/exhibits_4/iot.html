@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT-системы</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall4/hall_4.html">Зал 4 — Классификация современных вычислительных систем</a></li>
+                <li aria-current="page">IoT-системы</li>
+            </ol>
+        </nav>
+
+        <h1>IoT-системы</h1>
+        <h2>Сети «умных» устройств, которые собирают данные из физического мира и превращают дома, фабрики, транспорт и носимую электронику в управляемые цифровые системы.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Что это такое</h3>
+
+                <p>IoT, или Internet of Things, — это не один компьютер, а сеть подключённых устройств: датчиков, камер, часов, термостатов, промышленных контроллеров и бытовой техники. Они измеряют состояние окружающей среды, передают данные и могут автоматически реагировать на события.</p>
+
+                <p>В умном доме IoT управляет светом, климатом, замками, камерами и розетками. В носимой электронике — считает шаги, измеряет пульс, отслеживает сон и передаёт данные в приложение. В промышленности похожие принципы используют для контроля станков, линий сборки, складов и энергетических объектов.</p>
+
+                <p>Главное отличие IoT от обычной встроенной электроники — подключение к сети и работа в составе большой системы. Устройство не просто выполняет одну локальную функцию, а обменивается данными с приложением, облаком, шлюзом или другими устройствами.</p>
+
+                <p>Современные IoT-платформы помогают подключать, регистрировать, обновлять и защищать миллионы устройств. AWS, Microsoft Azure и другие облачные сервисы отдельно выделяют IoT-инфраструктуру для сбора, маршрутизации и анализа данных с устройств.  [oai_citation:0‡azure.microsoft.com](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-iot?utm_source=chatgpt.com)</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall4/iot_icon.jpg",
+                    "../images_hall4/iot_1.jpg",
+                    "../images_hall4/iot_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Умный дом: датчики, лампы, камеры и бытовые устройства работают как единая сеть",
+                    "Носимая электроника собирает данные о движении, пульсе, сне и активности пользователя",
+                    "Промышленный IoT связывает станки, датчики и аналитические платформы для контроля производства"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall4/iot_1.jpg" alt="IoT-системы">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как устроены</h3>
+
+                <p>Типичная IoT-система состоит из трёх уровней: устройства на месте, сеть передачи данных и платформа обработки. На первом уровне работают датчики и исполнительные механизмы: они измеряют температуру, вибрацию, влажность, движение, давление или открытие двери.</p>
+
+                <p>Данные передаются по Wi-Fi, Bluetooth Low Energy, Zigbee, Thread, LoRaWAN, NB-IoT, Ethernet или промышленным протоколам. Выбор связи зависит от задачи: умным часам важна экономия батареи, а промышленному станку — стабильность и предсказуемая задержка.</p>
+
+                <p>Между устройствами и облаком часто стоит шлюз. Он собирает данные с локальных датчиков, фильтрует лишнее, переводит протоколы и может выполнять часть логики без интернета. Такой подход называют edge computing — вычислениями на краю сети.</p>
+
+                <p>В промышленном IoT данные чаще нужны не ради красивого графика, а ради обслуживания оборудования: обнаружить перегрев подшипника, заметить рост вибрации, предсказать остановку линии или автоматически создать заявку на ремонт. Industrial IoT обычно требует более строгой безопасности, поддержки промышленных протоколов и работы рядом с PLC и SCADA-системами.  [oai_citation:1‡arm.com](https://www.arm.com/glossary/industrial-iot?utm_source=chatgpt.com)</p>
+
+                <p>Безопасность — одна из главных проблем IoT. Устройства могут годами висеть в сети без внимания, иметь слабые пароли или редко получать обновления. Поэтому современные платформы используют сертификаты, шифрование, удалённое обновление прошивок и мониторинг подозрительного поведения.</p>
+
+                <p>Важно не путать IoT с отдельными встроенными системами. Микроконтроллерная плата или одноплатный компьютер сами по себе относятся к встроенным системам; IoT начинается там, где такие устройства подключаются к сети и становятся частью распределённой инфраструктуры.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/6mBO2vqLv38" title="What is IoT"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>В умном доме один датчик движения может запускать сразу несколько сценариев: включить свет, снизить яркость ночью, отправить уведомление и записать событие в журнал.</p>
+
+                    <p>Носимые устройства часто обрабатывают часть данных прямо на устройстве, чтобы не передавать в облако каждый шаг или каждое движение руки.</p>
+
+                    <p>В промышленности IoT нередко внедряют сначала на старом оборудовании: к станку добавляют датчики вибрации и температуры, даже если сам станок был создан задолго до интернета.</p>
+
+                    <p>MQTT стал одним из популярных протоколов IoT, потому что хорошо подходит для устройств с нестабильной связью и небольшими сообщениями.</p>
+
+                    <p>Самая трудная часть IoT-проекта часто не датчики, а эксплуатация: обновления, безопасность, совместимость устройств и обработка огромного количества мелких событий.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Что отличает IoT-систему от обычного автономного устройства?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Наличие корпуса</label>
+                    <label><input type="radio" name="q1" value="b"> Подключение к сети и обмен данными с другими системами</label>
+                    <label><input type="radio" name="q1" value="c"> Обязательное наличие большого экрана</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Зачем в IoT часто используют шлюз?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Чтобы собирать данные, переводить протоколы и выполнять часть логики локально</label>
+                    <label><input type="radio" name="q2" value="b"> Чтобы заменить аккумулятор</label>
+                    <label><input type="radio" name="q2" value="c"> Чтобы печатать отчёты на бумаге</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Что относится к промышленному IoT?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Только игровые компьютеры</label>
+                    <label><input type="radio" name="q3" value="b"> Только электронные книги</label>
+                    <label><input type="radio" name="q3" value="c"> Датчики и аналитика для контроля оборудования и производства</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-iot">https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-iot</a></li>
+                    <li><a href="https://aws.amazon.com/iot/">https://aws.amazon.com/iot/</a></li>
+                    <li><a href="https://www.arm.com/glossary/industrial-iot">https://www.arm.com/glossary/industrial-iot</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Интернет_вещей">https://ru.wikipedia.org/wiki/Интернет_вещей</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/smartphones.html">
+                        &#10094; Назад "Смартфоны"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/embedded_systems.html">
+                        &#10095; Далее "Встроенные системы"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

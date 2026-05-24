@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БЭСМ-1</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>1 поколение</li>
+                <li aria-current="page">БЭСМ-1</li>
+            </ol>
+        </nav>
+
+        <h1>БЭСМ-1 (1952 г.)</h1>
+        <h2>Большая электронно-счётная машина Сергея Лебедева — ранняя советская ЭВМ начала 1950-х.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>Работа над БЭСМ началась после переезда Сергея Лебедева (академик, доктор тех. наук) в Москву, в Институт точной механики и вычислительной техники АН СССР. До этого его команда уже имела опыт с МЭСМ, но новая машина задумывалась совсем другого масштаба: быстрее, универсальнее и пригодной для серьёзных научных задач.</p>
+
+                <p>Осенью 1952 года БЭСМ-1 начала работать в опытном режиме, а в 1953 году была принята государственной комиссией. Это была полноценная вычислительная система с оперативной памятью, внешними накопителями, устройствами ввода и печати результатов.</p>
+
+                <p>Машина появилась в момент, когда вычислительная техника ещё не имела устойчивых стандартов. Инженерам приходилось выбирать между скоростью, надёжностью и доступностью деталей. В БЭСМ использовали электронные лампы, полупроводниковые диоды, магнитные барабаны, ленты и несколько вариантов оперативной памяти, которые менялись по мере развития проекта.</p>
+
+                <p>В начале 1950-х БЭСМ-1 считалась одной из самых быстрых ЭВМ в Европе. Она уступала американской IBM 701, но для советской науки это был резкий переход от ручных расчётов и электромеханики к вычислениям со скоростью тысяч операций в секунду.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/besm_icon.jpg",
+                    "../images_hall3/besm1.jpg",
+                    "../images_hall3/besm2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "БЭСМ-1 — большая электронно-счётная машина, АН СССР",
+                    "Макет машины БЭСМ АН в музее истории ИТМиВТ РАН",
+                    "БЭСМ-1 в работе"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/besm1_1.jpg" alt="БЭСМ-1">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и характеристики</h3>
+
+                <p>БЭСМ-1 была машиной параллельного действия: операции выполнялись сразу над всеми разрядами числа, а не последовательно. Для своего времени это давало серьёзный прирост скорости и делало машину подходящей для задач, где требовались длинные численные расчёты.</p>
+
+                <p>В основе стояли около 4000 электронных ламп и 5000 полупроводниковых диодов. Такое сочетание помогало уменьшить количество ламп — самого капризного и горячего элемента ранних ЭВМ.</p>
+
+                <p>Слово машины имело 39 разрядов, использовалась двоичная арифметика с плавающей запятой. Система команд была трёхадресной: в одной команде указывались два операнда и место, куда нужно записать результат.</p>
+
+                <p>Оперативная память сначала строилась на электронно-лучевых трубках, позже в машине испытывали ртутные линии задержки, потенциалоскопы и ферритовые сердечники. Эта смена памяти хорошо показывает эпоху: инженеры ещё искали лучший способ хранить данные быстро и достаточно надёжно.</p>
+
+                <p>Быстродействие БЭСМ-1 составляло примерно 8–10 тысяч операций в секунду. Внешняя память размещалась на магнитных барабанах и магнитных лентах, ввод выполнялся с перфоленты, а результаты печатались на бумагу.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/-vNKufyPjF4" title="БЭСМ-1 против Стрелы"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Значение</h3>
+                    <p>В 1953 году на международной конференции в Дармштадте скорость БЭСМ произвела сильное впечатление: для Европы того времени несколько тысяч операций в секунду были почти предельным уровнем, это показало высокий уровень развития советской вычислительной техники.</p>
+                    <p>Хоть БЭСМ-1 и существовала в одном экземпляре, но её архитектура стала основой для дальнейших машин линии БЭСМ и М-20.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="a">
+                    <p>Кто был главным конструктором БЭСМ-1?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Сергей Лебедев</label>
+                    <label><input type="radio" name="q1" value="b"> Исаак Брук</label>
+                    <label><input type="radio" name="q1" value="c"> Виктор Глушков</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Какое быстродействие имела БЭСМ-1?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Около 20 операций в секунду</label>
+                    <label><input type="radio" name="q2" value="b"> Около 500 операций в секунду</label>
+                    <label><input type="radio" name="q2" value="c"> Около 8–10 тысяч операций в секунду</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Где разрабатывалась БЭСМ-1?</p>
+
+                    <label><input type="radio" name="q3" value="a"> В Энергетическом институте АН СССР</label>
+                    <label><input type="radio" name="q3" value="b"> В ИТМиВТ АН СССР</label>
+                    <label><input type="radio" name="q3" value="c"> В Новосибирском академгородке</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/БЭСМ">https://ru.wikipedia.org/wiki/БЭСМ</a></li>
+                    <li><a href="https://besm-6.ru/besm-series.html">https://besm-6.ru/besm-series.html</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/m1.html">
+                        &#10094; Назад "М-1"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/ibm7090.html">
+                        &#10095; Далее "IBM 7090"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

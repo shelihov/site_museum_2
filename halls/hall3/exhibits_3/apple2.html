@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple II</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>4 поколение</li>
+                <li aria-current="page">Apple II</li>
+            </ol>
+        </nav>
+
+        <h1>Apple II (1977 г.)</h1>
+        <h2>Один из первых массовых персональных компьютеров, превративший микрокомпьютеры из игрушки для энтузиастов в полноценный домашний и офисный инструмент.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>Apple II появился в 1977 году и резко отличался от большинства ранних микрокомпьютеров. Вместо набора плат для радиолюбителей пользователь получал готовое устройство: пластиковый корпус, встроенную клавиатуру, цветную графику и возможность подключить монитор или телевизор.</p>
+
+                <p>Главным инженером проекта был Стив Возняк. Многие решения он проектировал с почти фанатичной экономией компонентов. Возняк постоянно искал способы уменьшить количество микросхем, чтобы удешевить производство и повысить надёжность.</p>
+
+                <p>Компьютер быстро стал популярным в школах, университетах и небольших компаниях. В отличие от дорогих мейнфреймов и мини-компьютеров, Apple II можно было поставить прямо на стол и использовать без отдельного вычислительного центра.</p>
+
+                <p>Настоящий коммерческий взрыв произошёл после выхода программы VisiCalc — первого массового табличного процессора. Многие компании покупали Apple II не ради самого компьютера, а ради возможности автоматизировать финансовые расчёты.</p>
+
+                <p>Для Apple этот компьютер стал первым по-настоящему крупным успехом. Продажи Apple II финансировали дальнейшее развитие компании и подготовили почву для Macintosh.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/apple2_icon.jpg",
+                    "../images_hall3/apple2_1.jpg",
+                    "../images_hall3/apple2_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Apple II с фирменным пластиковым корпусом и встроенной клавиатурой",
+                    "Стив Возняк демонстрирует Apple II на компьютерной выставке",
+                    "Apple II с дисководом Disk II и монитором начала 1980-х"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/apple2_1.jpg" alt="Apple II">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и особенности</h3>
+
+                <p>Apple II строился на 8-битном процессоре MOS Technology 6502 с тактовой частотой около 1 МГц. Даже по меркам конца 1970-х характеристики выглядели довольно скромно, но грамотная архитектура делала систему удивительно быстрой и отзывчивой.</p>
+
+                <p>Одной из самых необычных особенностей стала цветная графика. Большинство домашних компьютеров того времени работали только с текстом или монохромным изображением, а Apple II мог выводить цвет прямо на обычный телевизор.</p>
+
+                <p>Компьютер имел открытую архитектуру с несколькими слотами расширения. Пользователи могли самостоятельно добавлять память, контроллеры, сетевые карты и другие устройства. Именно это сделало Apple II популярной платформой для энтузиастов и малого бизнеса.</p>
+
+                <p>Дисковод Disk II, разработанный Возняком, считался инженерным шедевром своего времени. Он использовал минимальное количество электроники и был заметно дешевле многих конкурентов.</p>
+
+                <p>Система загружалась практически мгновенно по современным меркам. Пользователь сразу попадал в BASIC и мог начинать программировать без сложной настройки или отдельной операционной системы.</p>
+
+                <p>Apple II выпускался и модернизировался почти 16 лет — редкий срок для персонального компьютера. За это время появилось множество моделей, аксессуаров и программ.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/RkTaMyatsTo" title="Apple II history and demonstration"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Apple II стал одним из первых компьютеров, который продавался не как набор деталей, а как готовое потребительское устройство.</p>
+
+                    <p>Встроенный интерпретатор Integer BASIC был написан лично Стивом Возняком.</p>
+
+                    <p>Во многих американских школах 1980-х Apple II использовался как стандартный учебный компьютер, а некоторые образовательные программы стали культовыми.</p>
+
+                    <p>Именно на Apple II появилась игра Prince of Persia — её создатель Джордан Мекнер использовал реальные видеозаписи движений своего брата для анимации персонажа.</p>
+
+                    <p>Несмотря на популярность IBM PC, отдельные модели Apple II продолжали использоваться в школах и небольших компаниях ещё в 1990-х.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Кто был главным инженером Apple II?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Стив Джобс</label>
+                    <label><input type="radio" name="q1" value="b"> Стив Возняк</label>
+                    <label><input type="radio" name="q1" value="c"> Билл Гейтс</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Какая программа сделала Apple II особенно популярным в бизнесе?</p>
+
+                    <label><input type="radio" name="q2" value="a"> VisiCalc</label>
+                    <label><input type="radio" name="q2" value="b"> Photoshop</label>
+                    <label><input type="radio" name="q2" value="c"> Lotus Notes</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Какой процессор использовался в Apple II?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Intel 8086</label>
+                    <label><input type="radio" name="q3" value="b"> Zilog Z80</label>
+                    <label><input type="radio" name="q3" value="c"> MOS Technology 6502</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Apple_II">https://ru.wikipedia.org/wiki/Apple_II</a></li>
+                    <li><a href="https://www.apple2history.org/">https://www.apple2history.org/</a></li>
+                    <li><a href="https://computerhistory.org/blog/apple-ii/">https://computerhistory.org/blog/apple-ii/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/es_evm.html">
+                        &#10094; Назад "ЕС ЭВМ"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/ibm_pc.html">
+                        &#10095; Далее "IBM PC"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

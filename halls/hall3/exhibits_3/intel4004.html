@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel 4004</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>4 поколение</li>
+                <li aria-current="page">Intel 4004</li>
+            </ol>
+        </nav>
+
+        <h1>Intel 4004 (1971 г.)</h1>
+        <h2>Первый коммерческий микропроцессор Intel: крошечная 4-битная микросхема, с которой началась эпоха процессора как отдельного продукта.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>Intel 4004 появился не как процессор для компьютера, а как часть заказа японской компании Busicom. Ей требовался набор микросхем для новой линейки калькуляторов. Первоначальный проект предполагал множество специализированных чипов, но инженер Intel Тед Хофф предложил более гибкий вариант: универсальный процессор и несколько вспомогательных микросхем.</p>
+
+                <p>Идею доработали Стэнли Мэйзор, Федерико Фаджин и Масатоси Сима. Фаджин отвечал за физическую реализацию чипа и применил технологию silicon-gate, которая позволила сделать схему компактнее и быстрее.</p>
+
+                <p>В 1971 году Intel получила право продавать 4004 другим клиентам. Это оказалось важнее самого калькуляторного заказа: процессор перестал быть скрытой частью конкретного устройства и стал самостоятельным компонентом, который можно было купить и применить в другой системе.</p>
+
+                <p>По современным меркам Intel 4004 почти игрушечный: 4-битная архитектура, частота до 740 кГц и всего несколько тысяч транзисторов. Но в начале 1970-х сама идея центрального процессора на одной микросхеме выглядела радикально.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/intel4004_icon.jpg",
+                    "../images_hall3/intel4004_1.jpg",
+                    "../images_hall3/intel4004_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Микропроцессор Intel 4004 в керамическом корпусе с золотыми выводами",
+                    "Калькулятор Busicom 141-PF, для которого создавался набор микросхем MCS-4",
+                    "Схема кристалла Intel 4004 с плотной компоновкой логики начала 1970-х"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/intel4004_1.jpg" alt="Intel 4004">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и особенности</h3>
+
+                <p>Intel 4004 был 4-битным процессором и входил в набор MCS-4 вместе с микросхемами памяти и ввода-вывода. Его проектировали для десятичной арифметики калькуляторов, поэтому работа с небольшими числами была важнее универсальной вычислительной мощности.</p>
+
+                <p>На кристалле размещалось около 2300 транзисторов. Для сравнения: современные процессоры содержат миллиарды, но именно 4004 показал, что центральный процессор можно уместить в одном корпусе размером с ноготь.</p>
+
+                <p>Процессор поддерживал 46 инструкций, имел 16 4-битных регистров и мог адресовать до 4 КБ программной памяти. Данные хранились отдельно от программы — архитектура была ближе к гарвардской модели.</p>
+
+                <p>Тактовая частота достигала примерно 740 кГц, а производительность — около 92 тысяч операций в секунду для простых команд. Это было достаточно для калькуляторов, терминалов, контроллеров и другой встроенной электроники.</p>
+
+                <p>Важным было не только само железо, но и новая логика рынка. Производитель устройства мог купить готовый процессор и программировать поведение системы, вместо того чтобы каждый раз проектировать отдельную схему из дискретной логики.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/6Lzgz1Vw5UY" title="Intel 4004 history"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Первым коммерческим применением Intel 4004 стал калькулятор Busicom 141-PF.</p>
+
+                    <p>Название «4004» отражало 4-битную архитектуру и принадлежность к набору из четырёх основных микросхем.</p>
+
+                    <p>Федерико Фаджин позже стал одним из основателей Zilog и участвовал в создании знаменитого процессора Z80.</p>
+
+                    <p>Intel сначала была известна прежде всего как производитель памяти. Успех микропроцессоров изменил направление всей компании.</p>
+
+                    <p>4004 не предназначался для персональных компьютеров, но без него не было бы привычной идеи CPU как универсального сердца цифрового устройства.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="a">
+                    <p>Для какого устройства изначально создавался Intel 4004?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Калькулятор Busicom</label>
+                    <label><input type="radio" name="q1" value="b"> Игровая приставка Atari</label>
+                    <label><input type="radio" name="q1" value="c"> Персональный компьютер IBM</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Какой разрядности был Intel 4004?</p>
+
+                    <label><input type="radio" name="q2" value="a"> 8-битный</label>
+                    <label><input type="radio" name="q2" value="b"> 16-битный</label>
+                    <label><input type="radio" name="q2" value="c"> 4-битный</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Почему Intel 4004 считают важным для истории вычислительной техники?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Он первым получил графический интерфейс</label>
+                    <label><input type="radio" name="q3" value="b"> Он стал первым коммерческим микропроцессором Intel</label>
+                    <label><input type="radio" name="q3" value="c"> Он использовал CD-ROM</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Intel_4004">https://ru.wikipedia.org/wiki/Intel_4004</a></li>
+                    <li><a href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html">https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html</a></li>
+                    <li><a href="https://www.computerhistory.org/siliconengine/single-chip-processor-microprocessor/">https://www.computerhistory.org/siliconengine/single-chip-processor-microprocessor/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/es_evm.html">
+                        &#10094; Назад "ЕС ЭВМ"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/apple2.html">
+                        &#10095; Далее "Apple II"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

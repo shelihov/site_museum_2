@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>М-1</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>1 поколение</li>
+                <li aria-current="page">М-1</li>
+            </ol>
+        </nav>
+
+        <h1>М-1 (1951 г.)</h1>
+        <h2>Одна из первых советских электронных вычислительных машин.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>Работы над машиной М-1 начались в 1950 году в Энергетическом институте АН СССР под руководством Исаака Брука. Команда разработчиков М-1 была небольшой и постоянно сталкивалась с нехваткой компонентов, помещений и финансирования.</p>
+
+                <p>Инженерам приходилось буквально собирать компьютер из того, что удавалось достать. Часть электронных ламп и деталей брали со складов военной техники и радиолокационного оборудования, к примеру "купроксы" (медно-закисный выпримитель) из немецких измерительных приборов. </p>
+
+                <p>Несмотря на ограничения, в январе 1952 года М-1 выполнила первые вычисления. Это сделало её одной из первых действующих электронных ЭВМ в СССР. Машина использовалась для инженерных расчётов, задач энергетики и научных вычислений.</p>
+
+                <p>Вокруг М-1 позже сформировалась одна из сильнейших советских школ вычислительной техники. Многие инженеры и математики, работавшие с машиной, позже участвовали в создании более известных советских компьютеров.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/m1_icon.jpg",
+                    "../images_hall3/m1_1.jpg",
+                    "../images_hall3/m1_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "ЭВМ М-1 со стороны магнитного барабана",
+                    "Образец печати результатов решения на ЭВМ М-1",
+                    "Блок-схема ЭВМ М-1: арифметический узел (АУ); главный программный датчик (ГПД); магнитная память (МП), электронная память (ЭП); устройство ввода-вывода данных (УВВ)"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/m1_1.jpg" alt="М-1">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и особенности</h3>
+
+                <p>М-1 заметно отличалась от многих ранних машин своей компактностью. По советским меркам начала 1950-х это была относительно небольшая ЭВМ. Инженеры старались уменьшить количество электронных ламп, поскольку они были дорогими, дефицитными и часто выходили из строя.</p>
+
+                <p>В машине использовалась память на электронно-лучевых трубках. Такое решение позволяло хранить данные быстрее, чем на релейных системах, но требовало постоянной настройки и было крайне чувствительно к помехам.</p>
+
+                <p>Производительность М-1 составляла примерно 15–20 операций в секунду. Даже с такой скоростью машина значительно ускоряла инженерные расчёты по сравнению с ручными вычислениями и электромеханическими калькуляторами.</p>
+
+                <p>Интересной особенностью стала элементная база: часть логических схем была построена на полупроводниковых диодах. Для начала 1950-х это выглядело довольно необычно — большинство компьютеров того времени полностью зависели от ламп.</p>
+
+                <p>Машина занимала несколько шкафов и потребляла существенно меньше энергии, чем многие зарубежные аналоги того же периода.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/W5nvBtIagbw" title="Советские компьютеры М-1"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Значение</h3>
+                    <p>Машина показала, что даже небольшая группа инженеров способна создать полноценный электронный компьютер без огромных производственных ресурсов. Для советской науки начала 1950-х это был важный эксперимент: вычислительная техника постепенно переставала быть исключительно военным проектом и начинала использоваться в научных институтах и промышленности.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Кто руководил разработкой ЭВМ М-1?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Сергей Лебедев</label>
+                    <label><input type="radio" name="q1" value="b"> Исаак Брук</label>
+                    <label><input type="radio" name="q1" value="c"> Андрей Ершов</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Какая особенность отличала М-1 от многих ранних ЭВМ?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Относительно компактная конструкция</label>
+                    <label><input type="radio" name="q2" value="b"> Использование транзисторов</label>
+                    <label><input type="radio" name="q2" value="c"> Наличие графического интерфейса</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Где велась разработка М-1?</p>
+
+                    <label><input type="radio" name="q3" value="a"> В МГУ</label>
+                    <label><input type="radio" name="q3" value="b"> В Ереване</label>
+                    <label><input type="radio" name="q3" value="c"> В Энергетическом институте АН СССР</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/М-1_(компьютер)">https://ru.wikipedia.org/wiki/М-1_(компьютер)</a></li>
+                    <li><a href="https://www.computer-museum.ru/histussr/3.htm">https://www.computer-museum.ru/histussr/3.htm</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/univac.html">
+                        &#10094; Назад "UNIVAC I"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/besm.html">
+                        &#10095; Далее "БЭСМ"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

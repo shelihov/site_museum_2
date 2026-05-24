@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM System/360</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>3 поколение</li>
+                <li aria-current="page">IBM System/360</li>
+            </ol>
+        </nav>
+
+        <h1>IBM System/360 (1964 г.)</h1>
+        <h2>Семейство мейнфреймов, которое заменило набор несовместимых машин единой архитектурой — от небольших коммерческих систем до мощных научных центров.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>IBM представила System/360 7 апреля 1964 года. Для компании это был рискованный проект: вместо нескольких отдельных линеек IBM предложила одну совместимую семью машин для бизнеса, науки и государственных вычислительных центров.</p>
+
+                <p>До System/360 заказчик часто оказывался привязан к конкретной модели: программы, периферия и форматы данных плохо переносились между системами. IBM решила разорвать эту привычную схему. Идея была простой, но дорогой: пользователь мог начать с младшей машины, а затем перейти на более мощную модель без полной переделки программ.</p>
+
+                <p>Название «360» намекало на полный круг задач. Машины должны были закрыть всё: бухгалтерию, банки, страхование, инженерные расчёты, университетские вычисления и военные проекты. Для 1960-х это звучало почти дерзко — компьютеры всё ещё проектировали под довольно узкие сценарии.</p>
+
+                <p>Проектом руководили Фред Брукс и Джин Амдал. Позже Брукс напишет книгу «Мифический человеко-месяц», во многом основанную на опыте System/360: масштаб разработки оказался таким, что проблемы управления стали почти такими же сложными, как сама техника.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/ibm360_icon.jpg",
+                    "../images_hall3/ibm360_1.jpg",
+                    "../images_hall3/ibm360_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "IBM System/360 Model 30 — младшая модель семейства",
+                    "Операторская консоль IBM System/360 с панелью индикаторов и переключателей",
+                    "Вычислительный центр с мейнфреймом IBM System/360 и периферийными устройствами"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/ibm360_1.jpg" alt="IBM System/360">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и особенности</h3>
+
+                <p>System/360 связывают с третьим поколением ЭВМ благодаря IBM Solid Logic Technology. Это были не привычные дискретные транзисторы, а плотные гибридные модули: несколько элементов размещались на керамической подложке и упаковывались в компактные блоки.</p>
+
+                <p>Главная инженерная идея была не в одном процессоре, а в общей архитектуре. Разные модели System/360 отличались скоростью, памятью и внутренней реализацией, но работали с одним набором команд и общей периферией.</p>
+
+                <p>Архитектура ввела 8-битный байт как стандартную единицу адресации. Сегодня это кажется очевидным, но в начале 1960-х у машин встречались самые разные размеры слова и символа. System/360 помог закрепить байт как норму для будущих компьютеров.</p>
+
+                <p>Линейка включала модели от сравнительно доступных коммерческих машин до быстрых научных систем. Старшие версии могли выполнять сотни тысяч и миллионы операций в секунду, а младшие заменяли популярные машины IBM 1401 в офисной обработке данных.</p>
+
+                <p>Сложнее всего далась не электроника, а программное обеспечение. OS/360 задерживалась, росла в размерах и требовала огромной команды разработчиков. Именно этот опыт позже стал классическим примером того, что добавление людей в опаздывающий программный проект не обязательно ускоряет работу.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/4jftkU0j7Wk" title="IBM System/360 history"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>IBM вложила в System/360 миллиарды долларов — по масштабу это был один из самых рискованных коммерческих проектов в истории компании.</p>
+
+                    <p>Некоторые модели System/360 могли эмулировать старые машины IBM, чтобы клиенты не теряли уже написанные программы.</p>
+
+                    <p>System/360 Model 67 получила аппаратную поддержку динамического преобразования адресов — ранний шаг к виртуальной памяти и развитым системам разделения времени.</p>
+
+                    <p>Архитектурная линия System/360 пережила десятилетия: современные IBM Z всё ещё несут идеи совместимости, заложенные в середине 1960-х.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="c">
+                    <p>В каком году IBM представила System/360?</p>
+
+                    <label><input type="radio" name="q1" value="a"> 1959</label>
+                    <label><input type="radio" name="q1" value="b"> 1961</label>
+                    <label><input type="radio" name="q1" value="c"> 1964</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Что было главным отличием System/360 от многих прежних линеек ЭВМ?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Совместимая архитектура для разных моделей</label>
+                    <label><input type="radio" name="q2" value="b"> Встроенный цветной дисплей</label>
+                    <label><input type="radio" name="q2" value="c"> Работа без внешней памяти</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Какая единица данных была закреплена архитектурой System/360?</p>
+
+                    <label><input type="radio" name="q3" value="a"> 6-битный символ</label>
+                    <label><input type="radio" name="q3" value="b"> 8-битный байт</label>
+                    <label><input type="radio" name="q3" value="c"> 12-битное слово</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://www.ibm.com/history/system-360">https://www.ibm.com/history/system-360</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/IBM_System/360">https://en.wikipedia.org/wiki/IBM_System/360</a></li>
+                    <li><a href="https://www.columbia.edu/cu/computinghistory/36091.html">https://www.columbia.edu/cu/computinghistory/36091.html</a></li>
+                    <li><a href="https://dl.acm.org/doi/10.1147/rd.82.0087">https://dl.acm.org/doi/10.1147/rd.82.0087</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/razdan2.html">
+                        &#10094; Назад "Раздан-2"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/es_evm.html">
+                        &#10095; Далее "ЕС ЭВМ"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

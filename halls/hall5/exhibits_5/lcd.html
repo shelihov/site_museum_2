@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCD-дисплеи</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall5/hall_5.html">Зал 5 — Эволюция средств отображения информации</a></li>
+                <li aria-current="page">LCD-дисплеи</li>
+            </ol>
+        </nav>
+
+        <h1>LCD-дисплеи (Liquid Crystal Display)</h1>
+        <h2>Технология, которая сделала экраны тонкими, лёгкими и массовыми — от часов и калькуляторов до ноутбуков, мониторов и телевизоров.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>Жидкие кристаллы были открыты ещё в XIX веке, но практическое применение получили только спустя десятилетия. В 1970-х LCD начали использовать в калькуляторах, электронных часах и компактной бытовой электронике.</p>
+
+                <p>Главным преимуществом технологии стало крайне низкое энергопотребление. В отличие от CRT, LCD не требовали тяжёлой вакуумной трубки и мощной электронной развёртки.</p>
+
+                <p>Первые LCD-дисплеи были медленными, тусклыми и имели плохие углы обзора. Но по мере развития матриц, подсветки и цветных фильтров технология постепенно вытеснила электронно-лучевые трубки почти из всех потребительских устройств.</p>
+
+                <p>Особенно важным моментом стало распространение ноутбуков. Без тонких LCD-панелей современные портативные компьютеры были бы невозможны.</p>
+
+                <p>К середине 2000-х LCD окончательно победили CRT и начали вытеснять плазменные панели. Именно LCD сделали плоские телевизоры массовыми и относительно доступными.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall5/lcd_icon.jpg",
+                    "../images_hall5/lcd_1.jpg",
+                    "../images_hall5/lcd_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Современный LCD-монитор с тонким корпусом",
+                    "Структура LCD-матрицы с жидкими кристаллами и подсветкой",
+                    "LCD-дисплеи в ноутбуках, телевизорах и мобильной электронике"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall5/lcd_1.jpg" alt="LCD-дисплеи">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как работают LCD-дисплеи</h3>
+
+                <p>LCD не создаёт свет самостоятельно. Вместо этого экран использует подсветку, а жидкие кристаллы управляют тем, сколько света проходит через каждый пиксель.</p>
+
+                <p>Между слоями поляризационных фильтров находятся жидкие кристаллы, способные менять ориентацию под действием электрического поля. Это позволяет открывать или блокировать прохождение света.</p>
+
+                <p>Каждый пиксель делится на три субпикселя — красный, зелёный и синий. Комбинируя их яркость, дисплей формирует цветное изображение.</p>
+
+                <p>Сначала LCD использовали ламповую CCFL-подсветку, но позже её почти полностью заменили светодиоды. LED-подсветка сделала дисплеи тоньше, ярче и экономичнее.</p>
+
+                <p>Качество LCD сильно зависит от типа матрицы. TN-панели были дешёвыми и быстрыми, но страдали плохими углами обзора. IPS улучшили цветопередачу и стабильность изображения, а VA сделали акцент на высокой контрастности.</p>
+
+                <p>Главной проблемой LCD долго оставалась невозможность полностью перекрыть подсветку. Из-за этого чёрный цвет выглядел скорее тёмно-серым, особенно в тёмной комнате.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/jiejNAUwcQ8" title="How LCD screens work"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Даже современные LCD-дисплеи по-прежнему используют базовый принцип управления светом через жидкие кристаллы, разработанный десятилетия назад.</p>
+
+                    <p>TN-матрицы долго доминировали в игровых мониторах из-за высокой скорости отклика.</p>
+
+                    <p>IPS-дисплеи стали популярны у дизайнеров и фотографов благодаря более точной цветопередаче.</p>
+
+                    <p>Некоторые LCD-мониторы используют локальное затемнение подсветки, чтобы приблизиться к контрастности OLED.</p>
+
+                    <p>LCD-панели применяются не только в мониторах и телевизорах, но и в автомобильных приборных панелях, медицинском оборудовании и авиации.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Что используют LCD-дисплеи для формирования изображения?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Электронный луч</label>
+                    <label><input type="radio" name="q1" value="b"> Жидкие кристаллы и подсветку</label>
+                    <label><input type="radio" name="q1" value="c"> Газовую плазму</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Какое преимущество LCD получили по сравнению с CRT?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Больший вес</label>
+                    <label><input type="radio" name="q2" value="b"> Более глубокий корпус</label>
+                    <label><input type="radio" name="q2" value="c"> Тонкость и низкое энергопотребление</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Почему LCD сложно показывать идеально чёрный цвет?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Подсветка полностью не блокируется</label>
+                    <label><input type="radio" name="q3" value="b"> В них нет цветных фильтров</label>
+                    <label><input type="radio" name="q3" value="c"> Они используют электронные пушки</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Жидкокристаллический_дисплей">https://ru.wikipedia.org/wiki/Жидкокристаллический_дисплей</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Liquid-crystal_display">https://en.wikipedia.org/wiki/Liquid-crystal_display</a></li>
+                    <li><a href="https://www.explainthatstuff.com/lcdtv.html">https://www.explainthatstuff.com/lcdtv.html</a></li>
+                    <li><a href="https://www.rtings.com/monitor/learn/ips-vs-va-vs-tn">https://www.rtings.com/monitor/learn/ips-vs-va-vs-tn</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/exhibits_5/plasma.html">
+                        &#10094; Назад "Плазменные панели"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/exhibits_5/oled.html">
+                        &#10095; Далее "OLED-дисплеи"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

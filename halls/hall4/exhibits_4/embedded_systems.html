@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Встроенные системы</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall4/hall_4.html">Зал 4 — Классификация современных вычислительных систем</a></li>
+                <li aria-current="page">Встроенные системы</li>
+            </ol>
+        </nav>
+
+        <h1>Встроенные системы</h1>
+        <h2>Малозаметные вычислительные устройства, встроенные в технику, автомобили, станки, бытовую электронику и тысячи других систем вокруг нас.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Что это такое</h3>
+
+                <p>Встроенная система — это специализированный компьютер, предназначенный для выполнения конкретной задачи внутри другого устройства. В отличие от обычного ПК, пользователь часто даже не замечает, что внутри техники работает полноценная вычислительная система.</p>
+
+                <p>Микроконтроллеры управляют стиральными машинами, светофорами, автомобилями, дронами, медицинскими приборами и промышленными датчиками. Более мощные одноплатные компьютеры используются в робототехнике, автоматике, мультимедийных системах и образовательных проектах.</p>
+
+                <p>Главная особенность встроенных систем — тесная связь с физическим миром. Они работают с датчиками, кнопками, двигателями, экранами, реле и исполнительными механизмами, а не только с файлами и интерфейсами.</p>
+
+                <p>Во многих случаях встроенная система должна реагировать строго вовремя. Например, контроллер ABS в автомобиле не может «подвиснуть» на секунду — от задержки зависит безопасность движения.</p>
+
+                <p>Современная электроника буквально насыщена встроенными системами. Даже обычный смартфон содержит десятки отдельных микроконтроллеров для питания, зарядки, камеры, связи и датчиков.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall4/embedded_icon.jpg",
+                    "../images_hall4/embedded_1.jpg",
+                    "../images_hall4/embedded_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Микроконтроллерная плата для управления электроникой и датчиками",
+                    "Одноплатный компьютер Raspberry Pi с подключённой периферией",
+                    "Встроенная система управления промышленным оборудованием"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall4/embedded_1.jpg" alt="Встроенные системы">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как устроены</h3>
+
+                <p>Основой встроенной системы часто служит микроконтроллер — компактный чип, в котором объединены процессор, память и интерфейсы ввода-вывода. Такие устройства рассчитаны на минимальное энергопотребление и стабильную работу в течение многих лет.</p>
+
+                <p>Для более сложных задач используют одноплатные компьютеры: Raspberry Pi, NVIDIA Jetson, BeagleBone и другие платформы. В отличие от микроконтроллеров, они способны запускать полноценные операционные системы вроде Linux.</p>
+
+                <p>Встроенные системы работают с реальными сигналами: измеряют температуру, считывают данные с гироскопов, управляют моторами, сервоприводами и дисплеями. Поэтому важную роль играют интерфейсы GPIO, I2C, SPI, UART, CAN и другие протоколы взаимодействия с электроникой.</p>
+
+                <p>Во многих проектах используется RTOS — операционная система реального времени. Она позволяет гарантировать выполнение критических задач в нужный момент без непредсказуемых задержек.</p>
+
+                <p>Инженерам приходится учитывать не только вычисления, но и физические ограничения: нагрев, вибрации, питание, электромагнитные помехи и работу в тяжёлых условиях. Контроллер промышленного станка или автомобиля проектируется совсем иначе, чем домашний компьютер.</p>
+
+                <p>Сегодня встроенные системы всё чаще объединяются с ИИ и машинным зрением. Камеры дронов, автомобильные ассистенты и промышленные роботы могут анализировать изображение прямо на устройстве без постоянной связи с облаком.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/uQQsDWLRDuI" title="Embedded systems explained"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Микроконтроллеры могут стоить меньше доллара, но при этом управлять сложными устройствами и промышленными системами.</p>
+
+                    <p>В современном автомобиле работают десятки отдельных встроенных систем: от управления двигателем до климат-контроля и мультимедиа.</p>
+
+                    <p>Raspberry Pi изначально создавался как дешёвая образовательная платформа для изучения программирования, но быстро стал популярным далеко за пределами образования.</p>
+
+                    <p>Некоторые встроенные системы работают десятилетиями без выключения — например, промышленная автоматика или оборудование связи.</p>
+
+                    <p>Даже бытовая техника сегодня часто использует прошивки с возможностью обновления через USB или интернет.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="a">
+                    <p>Что такое встроенная система?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Специализированный компьютер внутри другого устройства</label>
+                    <label><input type="radio" name="q1" value="b"> Только игровой компьютер</label>
+                    <label><input type="radio" name="q1" value="c"> Облачный сервер</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Чем одноплатный компьютер отличается от микроконтроллера?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Наличием кнопки питания</label>
+                    <label><input type="radio" name="q2" value="b"> Отсутствием памяти</label>
+                    <label><input type="radio" name="q2" value="c"> Возможностью запускать полноценную ОС вроде Linux</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Для чего используется RTOS?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Для создания компьютерных игр</label>
+                    <label><input type="radio" name="q3" value="b"> Для гарантированного выполнения задач в нужное время</label>
+                    <label><input type="radio" name="q3" value="c"> Для работы только с интернет-браузером</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Встроенная_система">https://ru.wikipedia.org/wiki/Встроенная_система</a></li>
+                    <li><a href="https://www.arm.com/glossary/embedded-system">https://www.arm.com/glossary/embedded-system</a></li>
+                    <li><a href="https://www.raspberrypi.com/">https://www.raspberrypi.com/</a></li>
+                    <li><a href="https://www.freertos.org/">https://www.freertos.org/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/iot.html">
+                        &#10094; Назад "IoT-системы"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/hall_5.html">
+                        &#10095; Далее "Зал 5"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

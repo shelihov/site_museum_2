@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLED-дисплеи</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall5/hall_5.html">Зал 5 — Эволюция средств отображения информации</a></li>
+                <li aria-current="page">QLED-дисплеи</li>
+            </ol>
+        </nav>
+
+        <h1>QLED-дисплеи (Quantum Dot LED)</h1>
+        <h2>LCD-дисплеи с квантовыми точками: технология, которая усилила яркость и цветовой охват классических жидкокристаллических экранов.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>QLED появился как развитие LCD-технологии, когда производителям понадобилось улучшить цветопередачу и яркость без полного перехода на OLED. Главная идея — добавить слой квантовых точек между подсветкой и LCD-матрицей.</p>
+
+                <p>Квантовые точки — это наночастицы, которые излучают свет очень точного цвета в зависимости от своего размера. Малые частицы дают более короткие волны, крупные — более длинные. Благодаря этому дисплей может получать более чистые красный и зелёный цвета.</p>
+
+                <p>В 2010-х QLED активно продвигала Samsung как альтернативу OLED в премиальном сегменте телевизоров. Технология делала ставку на высокую яркость, устойчивость к выгоранию и хорошую работу в освещённых комнатах.</p>
+
+                <p>Важно понимать: большинство QLED-телевизоров — это не самосветящиеся экраны. В отличие от OLED, они всё ещё используют подсветку и жидкокристаллический слой. Квантовые точки улучшают цвет, но не отменяют базовые ограничения LCD.</p>
+
+                <p>Со временем QLED стал частью более широкой группы технологий: mini-LED-подсветка, локальное затемнение и квантовые точки вместе позволили LCD-дисплеям заметно приблизиться к OLED по контрастности, сохранив преимущество в пиковой яркости.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall5/qled_icon.jpg",
+                    "../images_hall5/qled_1.jpg",
+                    "../images_hall5/qled_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "QLED-телевизор с высокой яркостью и насыщенной цветопередачей",
+                    "Слой квантовых точек между подсветкой и LCD-матрицей",
+                    "Сравнение QLED и OLED: высокая яркость против самосветящихся пикселей"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall5/qled_1.jpg" alt="QLED">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как работают QLED-дисплеи</h3>
+
+                <p>В основе большинства QLED-экранов лежит обычная LCD-матрица. За ней находится LED-подсветка, а между подсветкой и жидкими кристаллами размещается плёнка с квантовыми точками.</p>
+
+                <p>Синяя подсветка проходит через слой квантовых точек. Одни наночастицы преобразуют часть света в красный, другие — в зелёный, а оставшаяся синяя составляющая проходит дальше. Так формируется более чистый RGB-спектр.</p>
+
+                <p>Благодаря этому QLED-дисплеи хорошо подходят для HDR-контента. Они могут достигать высокой пиковой яркости и сохранять насыщенные цвета в светлых сценах.</p>
+
+                <p>Главное отличие от OLED — наличие подсветки. Если на экране должен быть чёрный участок, LCD-слой пытается заблокировать свет, но полностью остановить его сложно. Поэтому чёрный цвет у QLED зависит от качества локального затемнения.</p>
+
+                <p>В современных моделях часто используется mini-LED-подсветка: экран делится на множество зон, которые могут затемняться независимо. Это уменьшает засветы вокруг ярких объектов и повышает контрастность.</p>
+
+                <p>QLED менее склонен к выгоранию, чем OLED, поэтому такие панели часто выбирают для ярких интерфейсов, спортивных трансляций, новостных каналов и помещений с сильным освещением.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/0uG7bX6xk6I" title="How QLED displays work"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Квантовые точки не являются «квантовым компьютером» внутри телевизора — это наноматериалы, управляющие цветом света.</p>
+
+                    <p>Размер квантовой точки влияет на цвет излучения: изменение на нанометровом уровне меняет оттенок.</p>
+
+                    <p>QLED лучше показывает себя в ярко освещённых комнатах, где высокая яркость важнее идеального чёрного цвета.</p>
+
+                    <p>Маркетингово QLED часто противопоставляют OLED, хотя технически это улучшенная ветвь LCD, а не полностью самостоятельный тип самосветящегося дисплея.</p>
+
+                    <p>Следующим шагом считаются настоящие самосветящиеся quantum dot-дисплеи, где квантовые точки будут сами испускать свет без LCD-слоя.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Что такое большинство современных QLED-дисплеев?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Плазменные панели</label>
+                    <label><input type="radio" name="q1" value="b"> LCD-дисплеи со слоем квантовых точек</label>
+                    <label><input type="radio" name="q1" value="c"> CRT-мониторы с LED-подсветкой</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Для чего нужны квантовые точки в QLED?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Для получения более чистых и насыщенных цветов</label>
+                    <label><input type="radio" name="q2" value="b"> Для создания вакуума в экране</label>
+                    <label><input type="radio" name="q2" value="c"> Для вращения изображения</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Чем QLED принципиально отличается от OLED?</p>
+
+                    <label><input type="radio" name="q3" value="a"> QLED всегда чёрно-белый</label>
+                    <label><input type="radio" name="q3" value="b"> OLED использует электронную пушку</label>
+                    <label><input type="radio" name="q3" value="c"> QLED использует подсветку, а OLED имеет самосветящиеся пиксели</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Дисплей_на_квантовых_точках">https://ru.wikipedia.org/wiki/Дисплей_на_квантовых_точках</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Quantum_dot_display">https://en.wikipedia.org/wiki/Quantum_dot_display</a></li>
+                    <li><a href="https://www.rtings.com/tv/learn/qled-vs-oled-vs-led">https://www.rtings.com/tv/learn/qled-vs-oled-vs-led</a></li>
+                    <li><a href="https://www.samsung.com/us/tvs/qled-tv/what-is-qled/">https://www.samsung.com/us/tvs/qled-tv/what-is-qled/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/exhibits_5/oled.html">
+                        &#10094; Назад "OLED-дисплеи"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/exhibits_5/vr_ar_systems.html">
+                        &#10095; Далее "Интерактивные системы (VR/AR)"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смартфоны</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall4/hall_4.html">Зал 4 — Классификация современных вычислительных систем</a></li>
+                <li aria-current="page">Смартфоны</li>
+            </ol>
+        </nav>
+
+        <h1>Смартфоны</h1>
+        <h2>Карманные вычислительные системы, которые объединили телефон, камеру, навигатор, медиаплеер, кошелёк и персональный компьютер в одном устройстве.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Что это такое</h3>
+
+                <p>Смартфон — это мобильный компьютер с сенсорным экраном, постоянным подключением к сети и операционной системой, на которую можно устанавливать приложения. Телефонная связь в нём стала лишь одной из функций, а не главным назначением устройства.</p>
+
+                <p>Первые смартфоны 1990-х и начала 2000-х больше напоминали карманные органайзеры с модемом: маленькие экраны, стилусы, физические клавиатуры и ограниченный интернет. Резкий перелом произошёл после появления iPhone в 2007 году и Android-устройств вскоре после него.</p>
+
+                <p>Смартфон изменил не только рынок электроники, но и повседневное поведение. Карты, билеты, банковские операции, переписка, фотоархив и рабочие документы переехали в устройство, которое постоянно находится в руке или кармане.</p>
+
+                <p>Современный смартфон по сложности ближе к миниатюрному дата-центру, чем к обычному телефону. Внутри работают многоядерный процессор, графика, нейронный ускоритель, модем, несколько камер, датчики движения, биометрия и защищённые модули для платежей.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall4/smartphones_icon.jpg",
+                    "../images_hall4/smartphones_1.jpg",
+                    "../images_hall4/smartphones_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Современный смартфон с большим сенсорным экраном и тонкими рамками",
+                    "Внутреннее устройство смартфона: аккумулятор, камеры, плата и модули связи",
+                    "Смартфон как универсальный карманный компьютер для связи, навигации и работы"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall4/smartphones_1.jpg" alt="Смартфоны">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как устроены</h3>
+
+                <p>Основой смартфона обычно служит система-на-кристалле — SoC. В одном чипе объединены центральный процессор, графический блок, контроллеры памяти, модемы, видеокодеки и всё чаще отдельный ускоритель для задач искусственного интеллекта.</p>
+
+                <p>Большинство смартфонов использует ARM-архитектуру. Она хорошо подходит для мобильных устройств: даёт высокую производительность при низком энергопотреблении и позволяет дольше работать от аккумулятора.</p>
+
+                <p>Камеры смартфона давно перестали быть просто оптикой и сенсором. Большая часть результата создаётся вычислительной фотографией: устройство объединяет несколько кадров, подавляет шум, дорисовывает детали, распознаёт сцену и корректирует изображение ещё до того, как пользователь увидит снимок.</p>
+
+                <p>Внутри корпуса почти нет свободного места. Аккумулятор занимает значительную часть объёма, а платы имеют многоуровневую компоновку. Любой миллиметр приходится делить между камерами, антеннами, динамиками, вибромотором и системой охлаждения.</p>
+
+                <p>Смартфоны постоянно обмениваются данными с сетью: Wi-Fi, Bluetooth, NFC, GPS и 4G/5G-модем работают параллельно. Из-за этого проектирование антенн стало одной из самых сложных частей устройства.</p>
+
+                <p>Главный компромисс смартфона — баланс между мощностью, автономностью, толщиной и нагревом. Устройство должно помещаться в карман, работать целый день и при этом запускать приложения, которые раньше требовали отдельного компьютера.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/hGmIb2wC0uU" title="How smartphones work"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>IBM Simon 1994 года часто называют одним из первых смартфонов: он совмещал телефон, календарь, факс, электронную почту и сенсорный экран.</p>
+
+                    <p>В современных флагманах нейронные ускорители часто используются не только для ИИ-приложений, но и для камеры, распознавания речи и экономии энергии.</p>
+
+                    <p>Вибромотор в смартфоне — отдельная инженерная деталь: от него зависит ощущение клавиатуры, уведомлений и жестов.</p>
+
+                    <p>Многие смартфоны имеют больше вычислительной мощности, чем настольные компьютеры начала 2000-х, но ограничены теплом и аккумулятором.</p>
+
+                    <p>Разъём для наушников исчез не только ради дизайна: освободившееся место производители часто использовали для батареи, защиты от влаги и дополнительных модулей.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="c">
+                    <p>Что такое SoC в смартфоне?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Тип защитного стекла</label>
+                    <label><input type="radio" name="q1" value="b"> Формат SIM-карты</label>
+                    <label><input type="radio" name="q1" value="c"> Система-на-кристалле с процессором и другими блоками</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Почему в смартфонах часто используют ARM-архитектуру?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Из-за хорошего баланса производительности и энергопотребления</label>
+                    <label><input type="radio" name="q2" value="b"> Потому что она требует лампового охлаждения</label>
+                    <label><input type="radio" name="q2" value="c"> Потому что не поддерживает мобильные приложения</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Что означает вычислительная фотография?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Печать фотографий на принтере</label>
+                    <label><input type="radio" name="q3" value="b"> Обработка снимка алгоритмами ещё во время съёмки</label>
+                    <label><input type="radio" name="q3" value="c"> Хранение фото только на плёнке</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Смартфон">https://ru.wikipedia.org/wiki/Смартфон</a></li>
+                    <li><a href="https://www.arm.com/glossary/soc">https://www.arm.com/glossary/soc</a></li>
+                    <li><a href="https://www.qualcomm.com/products/mobile/snapdragon/smartphones">https://www.qualcomm.com/products/mobile/snapdragon/smartphones</a></li>
+                    <li><a href="https://www.ibm.com/history/simon">https://www.ibm.com/history/simon</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/laptops.html">
+                        &#10094; Назад "Ноутбуки"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/iot.html">
+                        &#10095; Далее "IoT-системы"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

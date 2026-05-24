@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sycamore</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>5 поколение</li>
+                <li aria-current="page">Google Sycamore</li>
+            </ol>
+        </nav>
+
+        <h1>Google Sycamore (2019 г.)</h1>
+        <h2>Квантовый процессор Google, вокруг которого впервые всерьёз заговорили о «квантовом превосходстве» над классическими суперкомпьютерами.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>Во второй половине 2010-х квантовые вычисления перестали быть исключительно университетской темой. IBM, Google, Intel и несколько стартапов начали гонку за созданием стабильных квантовых процессоров с десятками кубитов.</p>
+
+                <p>Процессор Sycamore представили в 2019 году в лаборатории Google Quantum AI. Главной целью проекта была не универсальная вычислительная система, а демонстрация того, что квантовый компьютер способен выполнить задачу, практически недостижимую для обычных суперкомпьютеров.</p>
+
+                <p>Google выбрала довольно необычный тест: генерацию и проверку случайных квантовых состояний. Задача не имела практической пользы сама по себе, но была крайне сложной для классической симуляции.</p>
+
+                <p>Компания заявила, что Sycamore выполнил вычисление примерно за 200 секунд, тогда как классическому суперкомпьютеру потребовались бы тысячи лет. Позже IBM оспорила эту оценку, показав, что задача всё же решаема классическими методами значительно быстрее. Но даже критики признавали: квантовые системы впервые приблизились к реальному преимуществу.</p>
+
+                <p>После публикации результатов термин «квантовое превосходство» мгновенно вышел за пределы научных журналов и стал частью массовых обсуждений будущего вычислительной техники.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/sycamore_icon.jpg",
+                    "../images_hall3/sycamore_1.jpg",
+                    "../images_hall3/sycamore_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Квантовый процессор Google Sycamore внутри криогенной системы охлаждения",
+                    "Многоуровневый криостат для работы сверхпроводящих кубитов",
+                    "Инженеры Google Quantum AI во время настройки квантового оборудования"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/sycamore_1.jpg" alt="Google Sycamore">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и особенности</h3>
+
+                <p>Sycamore использует сверхпроводящие кубиты — крошечные квантовые элементы, работающие при температурах около 15 миллиКельвин. Это холоднее межзвёздного пространства и требует сложной криогенной установки.</p>
+
+                <p>Процессор содержал 54 кубита, хотя один из них во время экспериментов оказался неисправен. Даже при таком масштабе система сталкивалась с серьёзной проблемой: квантовые состояния крайне нестабильны и быстро разрушаются из-за внешних помех.</p>
+
+                <p>Главная сложность квантовых вычислений — не просто добавить больше кубитов, а удерживать их когерентность и уменьшать количество ошибок. Поэтому значительная часть оборудования Sycamore — это не сам процессор, а система управления, фильтрации сигналов и охлаждения.</p>
+
+                <p>В отличие от обычных процессоров, квантовый чип не заменяет классический компьютер. Sycamore работает как специализированный ускоритель: обычные системы подготавливают задачи, управляют экспериментом и анализируют результаты.</p>
+
+                <p>Инженеры Google проектировали процессор с расчётом на масштабирование. Уже после Sycamore компания начала эксперименты с коррекцией квантовых ошибок и более крупными массивами кубитов.</p>
+
+                <p>Несмотря на громкие заголовки, Sycamore не умел запускать привычные программы, игры или операционные системы. Это был исследовательский инструмент, а не универсальный компьютер.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/-ZNEzzDcllU" title="Google Sycamore and quantum supremacy"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Криостат Sycamore выглядит как массивная золотистая люстра, хотя внутри находится один из самых сложных вычислительных процессоров своего времени.</p>
+
+                    <p>Большая часть системы нужна не для вычислений, а для борьбы с шумом, вибрациями и тепловыми помехами.</p>
+
+                    <p>После заявления Google о квантовом превосходстве акции некоторых компаний, связанных с квантовыми технологиями, резко выросли.</p>
+
+                    <p>IBM критиковала термин «квантовое превосходство», считая его маркетингово агрессивным и вводящим в заблуждение.</p>
+
+                    <p>Даже небольшие изменения температуры или электромагнитных помех могут нарушить вычисление квантового процессора.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="c">
+                    <p>Какая компания разработала процессор Sycamore?</p>
+
+                    <label><input type="radio" name="q1" value="a"> IBM</label>
+                    <label><input type="radio" name="q1" value="b"> Intel</label>
+                    <label><input type="radio" name="q1" value="c"> Google</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Какие элементы используются в Sycamore?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Сверхпроводящие кубиты</label>
+                    <label><input type="radio" name="q2" value="b"> Вакуумные лампы</label>
+                    <label><input type="radio" name="q2" value="c"> Оптические диски</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Что стало главным поводом для известности Sycamore?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Первый запуск Windows на квантовом компьютере</label>
+                    <label><input type="radio" name="q3" value="b"> Заявление о достижении квантового превосходства</label>
+                    <label><input type="radio" name="q3" value="c"> Использование в игровых приставках</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://www.nature.com/articles/s41586-019-1666-5">https://www.nature.com/articles/s41586-019-1666-5</a></li>
+                    <li><a href="https://blog.google/technology/research/quantum-supremacy-using-programmable-superconducting-processor/">https://blog.google/technology/research/quantum-supremacy-using-programmable-superconducting-processor/</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Sycamore_processor">https://en.wikipedia.org/wiki/Sycamore_processor</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/intel4004.html">
+                        &#10094; Назад "Intel 4004"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/ibm_quantum.html">
+                        &#10095; Далее "IBM Quantum"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

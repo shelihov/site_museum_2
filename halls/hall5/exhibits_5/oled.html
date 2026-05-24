@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLED-дисплеи</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall5/hall_5.html">Зал 5 — Эволюция средств отображения информации</a></li>
+                <li aria-current="page">OLED-дисплеи</li>
+            </ol>
+        </nav>
+
+        <h1>OLED-дисплеи (Organic Light-Emitting Diode)</h1>
+        <h2>Экраны, в которых каждый пиксель светится самостоятельно — без отдельной подсветки и без ограничений классических LCD-панелей.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>Первые исследования органических светодиодов начались ещё в 1980-х, но долгое время технология оставалась слишком дорогой и нестабильной для массового рынка.</p>
+
+                <p>Сначала OLED использовали в небольших дисплеях: MP3-плеерах, автомобильных панелях, фотоаппаратах и смартфонах. Постепенно технология стала достаточно надёжной для крупных телевизоров и профессиональных мониторов.</p>
+
+                <p>Главным преимуществом OLED оказался принцип работы: пиксели не блокируют внешний источник света, а сами испускают его. Это позволило добиться почти идеального чёрного цвета и очень высокой контрастности.</p>
+
+                <p>С распространением смартфонов OLED быстро начал вытеснять LCD во флагманских устройствах. Тонкие панели, глубокий чёрный цвет и возможность делать изогнутые экраны хорошо подходили для мобильной электроники.</p>
+
+                <p>Позже OLED стал стандартом премиальных телевизоров, а затем начал появляться в ноутбуках, планшетах, игровых консолях и VR-гарнитурах.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall5/oled_icon.jpg",
+                    "../images_hall5/oled_1.jpg",
+                    "../images_hall5/oled_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Современный OLED-дисплей с глубоким чёрным цветом",
+                    "Структура OLED-панели с самосветящимися пикселями",
+                    "Гибкий OLED-экран в современной мобильной электронике"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall5/oled_1.jpg" alt="OLED">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как работают OLED-дисплеи</h3>
+
+                <p>В OLED каждый пиксель состоит из органических светодиодов, которые начинают светиться при прохождении электрического тока. Дополнительная подсветка здесь не нужна.</p>
+
+                <p>Если пиксель должен быть чёрным, он просто выключается полностью. Именно поэтому OLED обеспечивает практически бесконечную контрастность и очень глубокий чёрный цвет.</p>
+
+                <p>Отсутствие отдельной подсветки позволило создавать тонкие, гибкие и даже складные экраны. Некоторые OLED-панели можно изгибать или сворачивать без разрушения матрицы.</p>
+
+                <p>OLED также отличается быстрым временем отклика. Пиксели меняют состояние почти мгновенно, поэтому изображение выглядит более плавным при движении.</p>
+
+                <p>Но технология оказалась сложной в производстве. Органические материалы постепенно деградируют, а синие субпиксели долгое время изнашивались быстрее остальных.</p>
+
+                <p>Другой известной проблемой стало выгорание. Если на экране долго отображаются статичные элементы — логотипы, интерфейс или панели приложений — они могут оставить слабый след на матрице.</p>
+
+                <p>Несмотря на ограничения, OLED стал одной из главных технологий современных премиальных дисплеев. При этом важно не путать OLED и QLED: QLED остаётся разновидностью LCD с улучшенной подсветкой, а OLED использует полностью самосветящиеся пиксели.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/WVgH571Yb0Q" title="How OLED displays work"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Глубокий чёрный цвет OLED достигается не фильтрацией света, а полным отключением пикселя.</p>
+
+                    <p>Складные смартфоны стали возможны именно благодаря гибким OLED-панелям.</p>
+
+                    <p>OLED-дисплеи часто используют в VR-гарнитурах из-за высокой скорости отклика и контрастности.</p>
+
+                    <p>Некоторые профессиональные студии используют OLED-мониторы как эталонные дисплеи для работы с цветом.</p>
+
+                    <p>Тёмные интерфейсы и dark mode частично помогают OLED экономить энергию, потому что чёрные пиксели практически не потребляют питание.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="c">
+                    <p>Главное отличие OLED от LCD?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Использование электронного луча</label>
+                    <label><input type="radio" name="q1" value="b"> Работа только в чёрно-белом режиме</label>
+                    <label><input type="radio" name="q1" value="c"> Самосветящиеся пиксели без отдельной подсветки</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Почему OLED обеспечивает глубокий чёрный цвет?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Пиксель полностью выключается</label>
+                    <label><input type="radio" name="q2" value="b"> Используется плазменная ячейка</label>
+                    <label><input type="radio" name="q2" value="c"> Экран покрывается специальной плёнкой</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Какая проблема долго сопровождала OLED?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Огромный вес</label>
+                    <label><input type="radio" name="q3" value="b"> Выгорание статичных элементов</label>
+                    <label><input type="radio" name="q3" value="c"> Необходимость вакуумной трубки</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/OLED">https://ru.wikipedia.org/wiki/OLED</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/OLED">https://en.wikipedia.org/wiki/OLED</a></li>
+                    <li><a href="https://www.explainthatstuff.com/oled-tv.html">https://www.explainthatstuff.com/oled-tv.html</a></li>
+                    <li><a href="https://www.rtings.com/tv/learn/oled-vs-led">https://www.rtings.com/tv/learn/oled-vs-led</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/exhibits_5/lcd.html">
+                        &#10094; Назад "LCD-дисплеи"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/exhibits_5/qled.html">
+                        &#10095; Далее "QLED-дисплеи"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

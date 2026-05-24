@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENIAC</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>1 поколение</li>
+                <li aria-current="page">ENIAC</li>
+            </ol>
+        </nav>
+        <h1>ENIAC (1945 г.)</h1>
+        <h2>Первый электронный цифровой вычислитель общего назначения, который можно было перепрограммировать для решения широкого спектра задач.</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>В 1942 г. для ускорения вычислений траекторий полета баллистических ракет и других снарядов в США была начата работа над созданием электронного цифрового вычислителя. Это было обусловлено необходимостью создания баллистических таблиц, работа над которыми занимала огромное количество времени и привлекала сотни сотрудников-клерков. К 1945 г. ENIAC (Electronic Numerical Integrator and Computer) был презентован, но война уже закончилась, и компьютер был переккомутирован под работу с термоядерным оружием.</p>
+                <p>В Баллистической лаборатории на ENIAC выполнялись расчёты по проблеме термоядерного оружия, прогнозам погоды в СССР для предсказания направления выпадения ядерных осадков на случай ядерной войны, инженерные расчёты, и конечно же таблиц стрельбы, включая таблицы стрельбы ядерными боеприпасами.</p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/eniac_icon.png", 
+                    "../images_hall3/eniac1.jpeg", 
+                    "../images_hall3/eniac2.png"
+                    ]'
+                    data-descriptions='[
+                    "Четыре панели ENIAC и одна из трех функциональных столов в Школе инженерии и прикладных наук Пенсильванского университета",
+                    "Официальная демонстрация первого программируемого электронного компьютера общего назначения ENIAC (ЭНИАК) в Электротехнической школе Мура при Пенсильванском университете, 1946г.",
+                    "Древо компьютеров, имеющее свое начало от ENIAC"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall1/" alt="?">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>ENIAC представлял из себя огромный зал из 17400 электронных ламп различных типов, 7200 кремневых диодов, 1500 реле, 10000 конденсаторов и 70000 резисторов. Имел вес в 30 тонн и энергопотребление в 174 кВт. При его работе температура в зале достигала 40-50 градусов Цельсия, а из за огромного количества электронных ламп существовало 1,8 миллиарда сценариев отказа в каждую секунду. Инженеры-создатели ENIAC снизили напряжение, подаваемое на лампы до 5,7В вместо подаваемого 6,3В, тем самым приблизив в среднем минимум на 20 часов без поломок - не много по нынешним меркам, но за каждые 20 часов работы компьютер выполнял месячный объем механических вычислителей.</p>
+                <p>До 1948 года для перепрограммирования ENIAC нужно было перекоммутировать его заново, в то время как Z3 умел считывать программы с перфорированной ленты. Программирование задачи на ЭНИАКе могло занимать до двух дней, а её решение — несколько минут. При перекоммутировании ЭНИАК превращался как бы в новый специализированный компьютер для решения специфической задачи. </p>
+                <p>С 16 сентября 1948 года ENIAC превратился в компьютер с хранимой программой (весьма примитивный). По предложению фон Неймана, высказанному в июне 1947 года[19], две функциональные таблицы были использованы для хранения всех команд ENIAСа, чтобы команды вызывались как подпрограммы во время исполнения кода. Компьютер стал работать несколько медленнее, но его программирование сильно упростилось. Старый метод перекоммутирования с тех пор больше не использовался.</p>
+                <p>В июле 1953 года к ЭНИАКу был подключён двоично-десятичный модуль памяти на магнитных сердечниках, увеличивший объём оперативной памяти компьютера с 20 до 120 число-слов.</p>
+            </div>
+            <div class="exhibit_column">
+                
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/k4oGI_dNaPc" title="ENIAC в пенсильванском университете"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Значение</h3>
+                    <p>ЭНИАК нельзя было назвать совершенным компьютером. Машина создавалась в военное время в большой спешке с нуля при отсутствии какого-либо предыдущего опыта создания подобных устройств. ЭНИАК был построен в единственном экземпляре, и инженерные решения, реализованные в ЭНИАКЕ, не использовались в последующих конструкциях компьютеров. ЭНИАК — скорей компьютер не первого, а «нулевого» поколения. Значение ЭНИАКа заключается просто в его существовании, которое доказало возможность построения полностью электронного компьютера, способного работать достаточно продолжительное время, чтобы оправдать затраты на его постройку и принести ощутимые результаты.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Для каких целей изначальноиспользовался ENIAC?</p>
+                    <label><input type="radio" name="q1" value="b"> Для проектирования сооружений</label>
+                    <label><input type="radio" name="q1" value="b"> Для вычисления баллистических траекторий</label>
+                    <label><input type="radio" name="q1" value="c"> Для обработки текстовых данных</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Каким образом программировался ENIAC? (до 1948г.)</p>
+                    <label><input type="radio" name="q2" value="a"> Перекоммутацией</label>
+                    <label><input type="radio" name="q2" value="b"> Вводом команд через клавиатуру</label>
+                    <label><input type="radio" name="q2" value="c"> С помощью программной памяти</label>
+                </div>
+                <div class="quiz_question" data-answer="c">
+                    <p>Какой был основной недостаток ENIAC?</p>
+                    <label><input type="radio" name="q3" value="a"> Большой размер</label>
+                    <label><input type="radio" name="q3" value="b">Дороговизна производства</label>
+                    <label><input type="radio" name="q3" value="c"> Низкий уровень надежности и бесперебойной работы</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/ЭНИАК">https://ru.wikipedia.org/wiki/ЭНИАК</a></li>
+                    <li><a href="https://habr.com/ru/companies/selectel/articles/572254/">https://habr.com/ru/companies/selectel/articles/572254/</a></li>
+                </ul>
+            </div>
+                <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/hall_3.html">&#10094; Назад "Зал 3"</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/univac.html">&#10095; Далее "UNIVAC"</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

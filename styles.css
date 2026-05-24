@@ -239,7 +239,11 @@ a.exhibit {
   align-items: start;
   margin-top: 50px;
 }
-
+.exhibit_column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .exhibit_text{
   background-color: #0b060c70;
   padding: 24px;

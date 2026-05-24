@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ноутбуки</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall4/hall_4.html">Зал 4 — Классификация современных вычислительных систем</a></li>
+                <li aria-current="page">Ноутбуки</li>
+            </ol>
+        </nav>
+
+        <h1>Ноутбуки</h1>
+        <h2>Компьютеры, которые сделали вычисления по-настоящему мобильными — от деловых поездок и университетов до игр, монтажа и удалённой работы.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Что это такое</h3>
+
+                <p>Ноутбук — это переносной персональный компьютер, в котором экран, клавиатура, аккумулятор и вычислительная система объединены в одном корпусе. Главная идея устройства — сохранить возможности полноценного ПК, но сделать их доступными вне офиса или дома.</p>
+
+                <p>Первые портативные компьютеры конца 1970-х и начала 1980-х были тяжёлыми, дорогими и больше напоминали переносные терминалы. Настоящий массовый рост начался в 1990-х, когда уменьшились размеры комплектующих, а аккумуляторы и дисплеи стали практичнее.</p>
+
+                <p>Со временем ноутбуки постепенно перестали быть компромиссом между мобильностью и производительностью. Современные модели могут использоваться для программирования, 3D-графики, видеомонтажа, машинного обучения и игр.</p>
+
+                <p>Особенно заметно ноутбуки изменили рабочую культуру. Постоянное рабочее место стало менее важным: компьютер можно взять в университет, поезд, самолёт, коворкинг или кафе.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall4/laptops_icon.jpg",
+                    "../images_hall4/laptops_1.jpg",
+                    "../images_hall4/laptops_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Современный ноутбук с тонким корпусом и большим дисплеем",
+                    "Внутреннее устройство ноутбука: система охлаждения, аккумулятор и материнская плата",
+                    "Рабочее пространство с ноутбуком для программирования и удалённой работы"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall4/laptops_1.jpg" alt="Ноутбуки">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как устроены</h3>
+
+                <p>Главная инженерная задача ноутбука — уместить производительное железо в компактный корпус с ограниченным охлаждением и автономным питанием. Поэтому компоненты здесь обычно тесно интегрированы и оптимизированы под энергопотребление.</p>
+
+                <p>В отличие от настольного ПК, в ноутбуках многие детали распаяны прямо на плате. Это помогает уменьшить размеры и энергопотери, но усложняет модернизацию и ремонт.</p>
+
+                <p>Современные ноутбуки используют энергоэффективные процессоры Intel, AMD и ARM. Всё чаще применяются системы-on-chip, где CPU, графика, контроллеры памяти и ИИ-ускорители объединены в одном чипе.</p>
+
+                <p>Охлаждение обычно строится вокруг тепловых трубок, испарительных камер и компактных вентиляторов. В игровых и профессиональных моделях система охлаждения иногда занимает почти половину внутреннего объёма корпуса.</p>
+
+                <p>Большую роль играет аккумулятор. Производители постоянно балансируют между временем автономной работы, производительностью и толщиной корпуса. Именно поэтому ультрабуки, игровые ноутбуки и мобильные рабочие станции выглядят настолько по-разному.</p>
+
+                <p>Современные ноутбуки всё чаще используют USB-C и Thunderbolt как универсальные интерфейсы: через один кабель можно передавать питание, изображение и данные одновременно.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/eQ_8F4nzyiw" title="How laptops are engineered"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Термин «ноутбук» появился потому, что ранние модели по размеру действительно напоминали бумажный блокнот.</p>
+
+                    <p>ThinkPad 700C начала 1990-х стал одним из первых ноутбуков с узнаваемым промышленным дизайном и TrackPoint.</p>
+
+                    <p>Современные игровые ноутбуки могут потреблять сотни ватт энергии и использовать видеокарты, сравнимые с настольными системами.</p>
+
+                    <p>Переход Apple на ARM-процессоры серии M резко изменил рынок: производители снова начали активно бороться за энергоэффективность, а не только за максимальную мощность.</p>
+
+                    <p>Во многих компаниях ноутбук окончательно вытеснил стационарный ПК — сотрудники просто подключают его к монитору и периферии через док-станцию.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Главное отличие ноутбука от настольного ПК?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Отсутствие оперативной памяти</label>
+                    <label><input type="radio" name="q1" value="b"> Мобильность и встроенный аккумулятор</label>
+                    <label><input type="radio" name="q1" value="c"> Работа только без интернета</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Почему ноутбуки сложнее модернизировать?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Многие компоненты интегрированы прямо на плате</label>
+                    <label><input type="radio" name="q2" value="b"> Они не используют процессоры</label>
+                    <label><input type="radio" name="q2" value="c"> В них нет накопителей</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Для чего используется Thunderbolt или USB-C?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Только для зарядки</label>
+                    <label><input type="radio" name="q3" value="b"> Только для интернета</label>
+                    <label><input type="radio" name="q3" value="c"> Для передачи питания, изображения и данных</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Ноутбук">https://ru.wikipedia.org/wiki/Ноутбук</a></li>
+                    <li><a href="https://www.intel.com/content/www/us/en/products/docs/laptops/what-is-a-laptop.html">https://www.intel.com/content/www/us/en/products/docs/laptops/what-is-a-laptop.html</a></li>
+                    <li><a href="https://www.lenovo.com/us/en/faqs/laptop-faqs/">https://www.lenovo.com/us/en/faqs/laptop-faqs/</a></li>
+                    <li><a href="https://www.apple.com/mac/">https://www.apple.com/mac/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/personal_computers.html">
+                        &#10094; Назад "Персональные компьютеры"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/exhibits_4/smartphones.html">
+                        &#10095; Далее "Смартфоны"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

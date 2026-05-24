@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVAC</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>1 поколение</li>
+                <li aria-current="page">UNIVAC</li>
+            </ol>
+        </nav>
+        <h1>UNIVAC</h1>
+        <h2>Универсальная интегральная электронная вычислительная машина</h2>
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+                <p>UNIVAC (UNIVersal Automatic Computer) - серия ранних электронных вычислительных машин, разработанных в середине 20го века. Наиболее известной моделю является UNIVAC I, который считается первым серийно выпускаемым компьютером для гражданского применения.</p>
+                <p>История UNIVAC началась после создания ENIVAC, его разработчики (Джон Мочли и Джон Эккерт) были убеждены, что компьютеры должны использоваться не только для военных целей, но и для широкого применения в гражданской сфере.</p>
+                <p>В 1946г. они создают собственную компанию для разработки универсальной вычислительной машины. Основным заказчиком стало Бюро переписи населения США, которому требовалась быстрая обработка больших объемов информации. Первый экземпляр UNIVAC I был доставлен в 1951 году.</p>
+                <p>Но особую известность данная машина получила во время президенстких выборов в 1952 году. Компьютер использовался для прогнозирования результатов выборов телеканалом CBS News, и смог заранее предсказать победу Эйзенхауэра. Это событие сильно повысило доверие общественности к компьютерам, став важным моментов в истории вычислительной техники.</p>
+            </div>
+            
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/univac_icon.jpg", 
+                    "../images_hall3/univac_1.jpg", 
+                    "../images_hall3/univac_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "UNIVAC I в Бюро переписи населения США, 1951г.",
+                    "Станция управления UNIVAC I, в Музее науки, Бостон, Массачусетс, США.",
+                    "Часть линии задержки ртути в UNIVAC I в Немецком музее, Мюнхен, Германия"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall1/" alt="?">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <!-- Описание под фото -->
+                    <p class="slider-description"></p>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и принцип работы</h3>
+                <p>Представлял из себя огромный электрический компьютер (несколько шкафов, занимающих всю комнату), состоящий из более чем 5000 электронных ламп, а так же тысячи диодов и резисторов. </p>
+                <p>От прародиля (ENIVAC) UNIVAC I отличался новым типом памяти - использовались ртутные линии задержки. Принцип работы был следующим: в начале электрический сигнал преобразовывался в акустический импульс, затем импульс проходил через ртуть, а на выходе сигнал считывался и снова отправлялся в начало линии. Таким образом данные постоянно "циркулировали" внутри памяти. Обьем данных был совсем небольшим по современным меркам - около 1000 слов.</p>
+                <p>Для долговременного хранения данных использовались магнитные ленты. Это позволило хранить большие обьемы информации и быстрее считывтаь ранние данные.</p>
+                <p>Главное отличие UNIVAC I от ENIVAC было в изменении принципа програмированния, если в ENIVAC программа задвалась физически, то в UNIVAC I программу можно было менять без фищической перекоммутации, а инструкции хранились в памяти.</p>
+            </div>
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/baMBIwCI7q8" title="Univac I"></iframe>
+                </div>
+                <div class="exhibit_text">
+                    <h3>Значение</h3>
+                    <p>UNIVAC в первую очередь доказал, что компьютеры могут применятся не только для военных целей, но и в гражданской сфере. В техническом плане разработка UNIVAC I оказала огромное влияние на будущее развитие индустрии. Такие технологии, как хранение программ в памяти, использование магнитных носителей и автоматическая обработка даных стала основой для будующих поколений компьютеров.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="c">
+                    <p>Чем UNIVAC I заметно отличался от ранних систем на перфокартах?</p>
+                    <label><input type="radio" name="q1" value="a"> Использованием транзисторов</label>
+                    <label><input type="radio" name="q1" value="b"> Возможностью подключения к интернету</label>
+                    <label><input type="radio" name="q1" value="c"> Использованием магнитных лент</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Для какой организации был установлен первый UNIVAC I?</p>
+                    <label><input type="radio" name="q2" value="a"> Бюро переписи населения США</label>
+                    <label><input type="radio" name="q2" value="b"> NASA</label>
+                    <label><input type="radio" name="q2" value="c"> Bell Labs</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Какую известную задачу UNIVAC выполнил в 1952 году?</p>
+                    <label><input type="radio" name="q3" value="a"> Расшифровал военные коды</label>
+                    <label><input type="radio" name="q3" value="b"> Предсказал результаты президентских выборов США</label>
+                    <label><input type="radio" name="q3" value="c"> Управлял атомным реактором</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>Сбросить</button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/UNIVAC_I">https://ru.wikipedia.org/wiki/UNIVAC_I</a></li>
+                </ul>
+            </div>
+                <div class="exhibit_text">
+                <h3>Навигация</h3>
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/eniac.html">&#10094; Назад "ENIAC"</a>
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/m1.html">&#10095; Далее "M-1"</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

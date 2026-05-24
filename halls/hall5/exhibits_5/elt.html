@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронно-лучевые трубки</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall5/hall_5.html">Зал 5 — Эволюция средств отображения информации</a></li>
+                <li aria-current="page">Электронно-лучевые трубки</li>
+            </ol>
+        </nav>
+
+        <h1>Электронно-лучевые трубки (CRT)</h1>
+        <h2>Технология, которая десятилетиями оставалась основой телевизоров, осциллографов и компьютерных мониторов задолго до появления плоских экранов.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>Электронно-лучевые трубки появились ещё в конце XIX века как лабораторные устройства для изучения поведения электронов в вакууме. Позже именно они стали основой первых телевизоров, радаров и компьютерных дисплеев.</p>
+
+                <p>Принцип работы оказался удивительно живучим. Вместо механических систем отображения CRT использовала электронный луч, который с высокой скоростью сканировал внутреннюю поверхность экрана. Это позволило выводить изображение в реальном времени.</p>
+
+                <p>Первые компьютерные терминалы и мониторы 1960–1970-х были в основном монохромными. Часто использовались зелёные, янтарные или белые символы на тёмном фоне — такой режим меньше утомлял глаза и был проще для электроники того времени.</p>
+
+                <p>К 1990-м CRT-мониторы достигли очень высокого качества изображения. Профессиональные модели Sony Trinitron, Mitsubishi Diamondtron и NEC MultiSync считались эталоном цветопередачи и чёткости.</p>
+
+                <p>Несмотря на огромные размеры и вес, электронно-лучевые трубки оставались доминирующей технологией почти полвека. Лишь массовое распространение LCD-дисплеев в 2000-х постепенно вытеснило их с рынка.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall5/crt_icon.jpg",
+                    "../images_hall5/crt_1.jpg",
+                    "../images_hall5/crt_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "Классический CRT-монитор с глубокой электронной трубкой",
+                    "Внутреннее устройство электронно-лучевой трубки и отклоняющей системы",
+                    "Рабочее место с компьютерным CRT-монитором конца 1990-х"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall5/crt_1.jpg" alt="CRT">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Как работали CRT-дисплеи</h3>
+
+                <p>Внутри CRT находилась вакуумная стеклянная трубка с электронной пушкой. Она испускала поток электронов, который ускорялся и направлялся на внутреннюю поверхность экрана, покрытую люминофором.</p>
+
+                <p>Когда электронный луч попадал в люминофор, участок экрана начинал светиться. Чтобы сформировать изображение, луч очень быстро перемещался по строкам сверху вниз десятки раз в секунду.</p>
+
+                <p>Для управления лучом использовались магнитные отклоняющие катушки. Именно поэтому рядом с CRT-мониторами иногда появлялись цветовые искажения — сильные магниты могли нарушить направление электронного потока.</p>
+
+                <p>Цветные CRT использовали три электронные пушки — для красного, зелёного и синего каналов. Перед экраном располагалась теневая маска или апертурная решётка, которая направляла электроны на нужные люминофорные точки.</p>
+
+                <p>CRT-дисплеи долго сохраняли важное преимущество: они отлично работали с разными разрешениями и частотами без фиксированной матрицы пикселей. Именно поэтому старые игры и низкие разрешения на CRT часто выглядят мягче и естественнее, чем на LCD.</p>
+
+                <p>Главными проблемами технологии были размеры, нагрев, высокое энергопотребление и мерцание при низкой частоте развёртки. Большие профессиональные мониторы могли весить больше 30 килограммов.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/3BJU2drrtCM" title="How CRT monitors work"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Некоторые профессиональные CRT-мониторы начала 2000-х до сих пор ценятся за качество цветопередачи и глубокий чёрный цвет.</p>
+
+                    <p>Игроки в ретро-игры часто используют CRT, потому что старые консоли и аркадные автоматы изначально проектировались именно под такие экраны.</p>
+
+                    <p>Мониторы Sony Trinitron использовали апертурную решётку вместо классической теневой маски, что делало изображение ярче и резче.</p>
+
+                    <p>Характерный «электрический» звук при включении CRT связан с работой высоковольтной системы и развёртки.</p>
+
+                    <p>На экране CRT иногда можно было заметить лёгкое мерцание периферийным зрением — особенно при частоте 60 Гц.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="a">
+                    <p>Что использовалось для формирования изображения в CRT?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Электронный луч</label>
+                    <label><input type="radio" name="q1" value="b"> Светодиодная матрица</label>
+                    <label><input type="radio" name="q1" value="c"> Лазерный проектор</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Почему CRT-мониторы были такими глубокими?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Из-за встроенных колонок</label>
+                    <label><input type="radio" name="q2" value="b"> Для размещения жёсткого диска</label>
+                    <label><input type="radio" name="q2" value="c"> Из-за длинной вакуумной трубки и электронной пушки</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Какое преимущество долго сохраняли CRT-дисплеи?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Минимальное энергопотребление</label>
+                    <label><input type="radio" name="q3" value="b"> Хорошая работа с разными разрешениями</label>
+                    <label><input type="radio" name="q3" value="c"> Полное отсутствие нагрева</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://ru.wikipedia.org/wiki/Электронно-лучевая_трубка">https://ru.wikipedia.org/wiki/Электронно-лучевая_трубка</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Cathode-ray_tube">https://en.wikipedia.org/wiki/Cathode-ray_tube</a></li>
+                    <li><a href="https://www.explainthatstuff.com/howtvswork.html">https://www.explainthatstuff.com/howtvswork.html</a></li>
+                    <li><a href="https://computerhistory.org/">https://computerhistory.org/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/hall_5.html">
+                        &#10094; Назад "Зал 5"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall5/exhibits_5/plazm_panels.html">
+                        &#10095; Далее "Плазменные панели"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC 1604</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>2 поколение</li>
+                <li aria-current="page">CDC 1604</li>
+            </ol>
+        </nav>
+
+        <h1>CDC 1604 (1960 г.)</h1>
+        <h2>Один из первых полностью транзисторных суперкомпьютеров, созданный Сеймуром Креем ещё до появления легендарных Cray.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>CDC 1604 появился вскоре после того, как Сеймур Крей покинул Engineering Research Associates и присоединился к новой компании Control Data Corporation. В конце 1950-х рынок вычислительной техники почти полностью контролировала IBM, и CDC пришлось искать способы конкурировать не масштабом, а инженерией.</p>
+
+                <p>Крей сделал ставку на транзисторы. В то время многие производители ещё продолжали выпускать ламповые машины или осторожно комбинировали старые и новые технологии. CDC 1604 стал одной из первых крупных ЭВМ, полностью построенных на транзисторной логике.</p>
+
+                <p>Машина создавалась прежде всего для научных и военных расчётов. Её использовали в университетах, авиационной промышленности и исследовательских лабораториях. Среди заказчиков были военно-воздушные силы США и крупные инженерные центры.</p>
+
+                <p>Для Сеймура Крея этот проект стал своеобразной репетицией будущих суперкомпьютеров. Уже в CDC 1604 были заметны его подходы: минимализм архитектуры, внимание к скорости передачи данных и стремление сократить лишнюю сложность.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/cdc1604_icon.jpg",
+                    "../images_hall3/cdc1604_1.jpg",
+                    "../images_hall3/cdc1604_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "CDC 1604 в вычислительном центре начала 1960-х",
+                    "Сеймур Крей во время работы в Control Data Corporation",
+                    "Консоль и магнитные накопители CDC 1604"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/cdc1604_1.jpg" alt="CDC 1604">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и особенности</h3>
+
+                <p>CDC 1604 использовал 48-битную архитектуру и был ориентирован на вычисления с плавающей запятой. Для научных задач начала 1960-х это было особенно важно: машина хорошо подходила для моделирования, физики и аэродинамики.</p>
+
+                <p>Полный переход на транзисторы сделал систему заметно надёжнее ламповых конкурентов. Компьютер выделял меньше тепла и требовал менее сложного охлаждения, хотя размеры вычислительного комплекса всё ещё были огромными.</p>
+
+                <p>Производительность достигала примерно 100 тысяч операций в секунду. По тем временам это был уровень дорогих научных машин IBM, но CDC удалось добиться высокой скорости при более компактной конструкции.</p>
+
+                <p>Сеймур Крей уделял большое внимание внутренней организации системы. Кабели старались делать как можно короче, а модули — размещать максимально плотно, чтобы уменьшить задержки сигналов. Позже этот подход станет одной из визитных карточек всех компьютеров Cray.</p>
+
+                <p>В системе активно использовались магнитные ленты и барабаны. Работа с данными по-прежнему строилась вокруг пакетной обработки: пользователи приносили задания на перфокартах и ждали результатов часами или даже сутками.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/2Z6Q5QJzjT8" title="CDC 1604 and Seymour Cray"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>CDC 1604 считается первой коммерчески успешной полностью транзисторной ЭВМ в США.</p>
+
+                    <p>Многие инженеры IBM сначала скептически относились к проекту CDC, считая, что транзисторы ещё недостаточно надёжны для больших вычислительных систем.</p>
+
+                    <p>Сеймур Крей лично участвовал не только в проектировании архитектуры, но и в компоновке аппаратных модулей внутри машины.</p>
+
+                    <p>Позже идеи CDC 1604 напрямую повлияли на создание CDC 6600 — компьютера, который часто называют первым настоящим суперкомпьютером.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="b">
+                    <p>Кто был главным разработчиком CDC 1604?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Джон фон Нейман</label>
+                    <label><input type="radio" name="q1" value="b"> Сеймур Крей</label>
+                    <label><input type="radio" name="q1" value="c"> Грейс Хоппер</label>
+                </div>
+
+                <div class="quiz_question" data-answer="a">
+                    <p>Какую особенность имел CDC 1604?</p>
+
+                    <label><input type="radio" name="q2" value="a"> Полностью транзисторная конструкция</label>
+                    <label><input type="radio" name="q2" value="b"> Сенсорный экран</label>
+                    <label><input type="radio" name="q2" value="c"> Графический интерфейс</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Для каких задач чаще всего использовали CDC 1604?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Домашние игры</label>
+                    <label><input type="radio" name="q3" value="b"> Обработка фотографий</label>
+                    <label><input type="radio" name="q3" value="c"> Научные и инженерные расчёты</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://en.wikipedia.org/wiki/CDC_1604">https://en.wikipedia.org/wiki/CDC_1604</a></li>
+                    <li><a href="https://computerhistory.org/blog/seymour-cray-and-control-data-corporation/">https://computerhistory.org/blog/seymour-cray-and-control-data-corporation/</a></li>
+                    <li><a href="https://www.cdc1604.org/">https://www.cdc1604.org/</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/ibm7090.html">
+                        &#10094; Назад "IBM 7090"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/razdan2.html">
+                        &#10095; Далее "ЭВМ «Раздан-2»"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Quantum System One</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="exhibit_page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/halls/hall3/hall_3.html">Зал 3 — Поколения ЭВМ</a></li>
+                <li>5 поколение</li>
+                <li aria-current="page">IBM Quantum</li>
+            </ol>
+        </nav>
+
+        <h1>IBM Quantum System One (2019 г.)</h1>
+        <h2>Первый квантовый компьютер IBM, оформленный как законченная вычислительная система, а не лабораторный эксперимент.</h2>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>История</h3>
+
+                <p>К концу 2010-х квантовые вычисления начали выходить из университетских лабораторий в сторону коммерческих платформ. IBM сделала ставку не только на исследования, но и на создание инфраструктуры, с которой смогут работать компании, университеты и разработчики.</p>
+
+                <p>В 2019 году IBM представила Quantum System One. Формально это был не первый квантовый процессор компании, но первая система, оформленная как полноценный вычислительный комплекс с промышленным дизайном, сервисной архитектурой и удалённым доступом через облако.</p>
+
+                <p>Проект разрабатывался совместно с дизайнерской студией Map Project Office и компанией Universal Design Studio. IBM неожиданно решила показать квантовый компьютер не как набор хаотичных лабораторных трубок и кабелей, а как технологический объект, который можно поставить в дата-центр будущего.</p>
+
+                <p>В отличие от громких заявлений о «квантовом превосходстве», IBM делала акцент на стабильности, масштабируемости и постепенном развитии экосистемы. Компания активно продвигала облачный доступ к квантовым системам через IBM Quantum Experience.</p>
+
+                <p>Именно благодаря этой платформе тысячи студентов и исследователей впервые получили возможность запускать реальные квантовые алгоритмы через браузер.</p>
+            </div>
+
+            <div class="exhibit_media">
+                <div 
+                    class="slider"
+                    data-images='[
+                    "../icon_hall3/ibmquantum_icon.jpg",
+                    "../images_hall3/ibmquantum_1.jpg",
+                    "../images_hall3/ibmquantum_2.jpg"
+                    ]'
+                    data-descriptions='[
+                    "IBM Quantum System One внутри герметичного стеклянного корпуса",
+                    "Криогенная система охлаждения квантового компьютера IBM",
+                    "Инженеры IBM Quantum во время обслуживания квантовой установки"
+                    ]'
+                >
+                    <button class="slider-btn slider-prev">&#10094</button>
+
+                    <img class="slider-image" src="../images_hall3/ibmquantum_1.jpg" alt="IBM Quantum System One">
+
+                    <button class="slider-btn slider-next">&#10095</button>
+
+                    <p class="slider-description"></p>
+                </div>
+
+                <div class="slider-modal" id="sliderModal">
+                    <div class="slider-modal-content">
+                        <button class="slider-modal-close" id="sliderModalClose">&times;</button>
+                        <button class="slider-modal-btn slider-modal-prev" id="sliderModalPrev">&#10094</button>
+
+                        <img class="slider-modal-image" id="sliderModalImage" src="" alt="Увеличенное изображение">
+
+                        <button class="slider-modal-btn slider-modal-next" id="sliderModalNext">&#10095</button>
+
+                        <p class="slider-modal-description" id="sliderModalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Конструкция и особенности</h3>
+
+                <p>В центре Quantum System One находится сверхпроводящий квантовый процессор, работающий при температурах, близких к абсолютному нулю. Для этого используется массивный криостат с несколькими уровнями охлаждения и сложной системой экранирования от внешних помех.</p>
+
+                <p>Снаружи система выглядит почти минималистично: герметичный стеклянный куб высотой около трёх метров скрывает сложную инженерную инфраструктуру. Такое оформление было частью идеи IBM — показать квантовый компьютер как промышленный продукт, а не экспериментальную установку.</p>
+
+                <p>Большая часть вычислительной работы по управлению квантовым процессором всё ещё выполняется обычными компьютерами. Классические системы формируют управляющие сигналы, обрабатывают результаты измерений и компенсируют ошибки.</p>
+
+                <p>Одной из главных проблем остаётся декогеренция — потеря квантового состояния из-за малейших внешних воздействий. Даже вибрации пола, тепловой шум или электромагнитные помехи могут нарушить вычисление.</p>
+
+                <p>IBM активно развивает программную платформу Qiskit — набор инструментов для создания и тестирования квантовых алгоритмов. Это одна из причин, почему IBM Quantum стал популярным в образовательной среде.</p>
+
+                <p>В отличие от обычных серверов, квантовые системы пока не заменяют классические вычисления. Их рассматривают как специализированные ускорители для отдельных задач: криптографии, моделирования молекул, оптимизации и квантовой химии.</p>
+            </div>
+
+            <div class="exhibit_column">
+                <div class="exhibit_media">
+                    <iframe src="https://www.youtube.com/embed/zr6qWz4G7_w" title="IBM Quantum System One"></iframe>
+                </div>
+
+                <div class="exhibit_text">
+                    <h3>Интересные факты</h3>
+
+                    <p>Стеклянный корпус Quantum System One открывается специальным моторизированным механизмом и весит несколько тонн.</p>
+
+                    <p>Для работы квантового процессора требуется температура около 15 миллиКельвин — холоднее космического пространства.</p>
+
+                    <p>IBM одной из первых сделала квантовые вычисления доступными через облако для широкой аудитории.</p>
+
+                    <p>Некоторые исследователи используют IBM Quantum не ради практических задач, а для обучения и экспериментов с квантовыми алгоритмами.</p>
+
+                    <p>Современные квантовые компьютеры пока чаще ограничены ошибками и шумом, чем чистой вычислительной мощностью.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibit_quiz">
+            <h3>Проверь свои знания!</h3>
+
+            <form class="quiz" data-quiz data-pass-score="2">
+                <div class="quiz_question" data-answer="a">
+                    <p>Что находится в центре IBM Quantum System One?</p>
+
+                    <label><input type="radio" name="q1" value="a"> Сверхпроводящий квантовый процессор</label>
+                    <label><input type="radio" name="q1" value="b"> Вакуумные лампы</label>
+                    <label><input type="radio" name="q1" value="c"> Оптический диск</label>
+                </div>
+
+                <div class="quiz_question" data-answer="c">
+                    <p>Как называется программная платформа IBM для квантовых вычислений?</p>
+
+                    <label><input type="radio" name="q2" value="a"> CUDA</label>
+                    <label><input type="radio" name="q2" value="b"> TensorFlow</label>
+                    <label><input type="radio" name="q2" value="c"> Qiskit</label>
+                </div>
+
+                <div class="quiz_question" data-answer="b">
+                    <p>Почему квантовые компьютеры требуют сложного охлаждения?</p>
+
+                    <label><input type="radio" name="q3" value="a"> Для работы жёстких дисков</label>
+                    <label><input type="radio" name="q3" value="b"> Для сохранения квантовых состояний кубитов</label>
+                    <label><input type="radio" name="q3" value="c"> Для питания мониторов</label>
+                </div>
+
+                <div class="quiz_actions">
+                    <button type="submit" class="quiz_button">Проверить ответы</button>
+
+                    <button type="button" class="quiz_button quiz_button-secondary" data-quiz-reset>
+                        Сбросить
+                    </button>
+
+                    <p class="quiz_result" data-quiz-result aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="exhibit_row">
+            <div class="exhibit_text">
+                <h3>Использованные источники</h3>
+
+                <ul class="exhibit_sources">
+                    <li><a href="https://www.ibm.com/quantum">https://www.ibm.com/quantum</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/IBM_Q_System_One">https://en.wikipedia.org/wiki/IBM_Q_System_One</a></li>
+                    <li><a href="https://research.ibm.com/blog/quantum-system-one">https://research.ibm.com/blog/quantum-system-one</a></li>
+                </ul>
+            </div>
+
+            <div class="exhibit_text">
+                <h3>Навигация</h3>
+
+                <div class="exhibit_div_buttons">
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall3/exhibits_3/sycamore.html">
+                        &#10094; Назад "Sycamore"
+                    </a>
+
+                    <a class="exhibit_buttons_prev_next" href="/halls/hall4/hall_4.html">
+                        &#10095; Далее "Зал 4"
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/quiz.js"></script>
+    <script src="/slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

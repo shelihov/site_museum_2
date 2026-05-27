@@ -1,0 +1,199 @@
+.museum-home {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 40px var(--page-padding) 0;
+}
+
+.home-title {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #93d58d;
+  font-size: clamp(30px, 5vw, 52px);
+}
+
+.computer {
+  display: grid;
+  justify-items: center;
+}
+
+.monitor {
+  width: min(100%, 980px);
+}
+
+.screen-frame {
+  padding: clamp(14px, 3vw, 32px);
+  border: 4px solid #f7f1df;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #f0eadb, #b8b0a0 45%, #837b70);
+  box-shadow: inset 8px 8px 0 rgba(255, 255, 255, 0.35), inset -12px -12px 0 rgba(55, 48, 42, 0.32);
+}
+
+.screen {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  border: 5px solid #242424;
+  border-radius: 16px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.05) 50%, rgba(0, 0, 0, 0.08) 50%),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.16), transparent 38%),
+    #067a7a;
+  background-size: 100% 4px, auto, auto;
+  box-shadow: inset 0 0 46px rgba(0, 0, 0, 0.48);
+}
+
+.desktop {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(130px, 1fr));
+  gap: 22px;
+  padding: 30px 26px 86px;
+}
+
+.desktop-icon {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  min-height: 126px;
+  padding: 10px 8px;
+  border: 1px solid transparent;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px #083939;
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+.desktop-icon:hover,
+.desktop-icon:focus-visible {
+  border-color: rgba(255, 255, 255, 0.78);
+  background: rgba(5, 11, 45, 0.25);
+  outline: none;
+}
+
+.desktop-icon-img {
+  width: 52px;
+  height: 52px;
+  image-rendering: pixelated;
+}
+
+.taskbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  min-height: 52px;
+  padding: 7px;
+  color: #111;
+  background: #c2c4c8;
+  border-top: 2px solid #f7f7f7;
+}
+
+.start-button,
+.task-status,
+.clock {
+  min-height: 34px;
+  padding: 7px 12px;
+  border: 2px solid #7d8189;
+  border-top-color: #f7f7f7;
+  border-left-color: #f7f7f7;
+  background: #c2c4c8;
+  box-shadow: inset -1px -1px #45484d;
+}
+
+.start-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.start-mark {
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #e33 0 25%, #38ad52 26% 50%, #2d72d9 51% 75%, #f0ca3c 76%);
+}
+
+.task-status {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.monitor-neck {
+  width: 22%;
+  height: 52px;
+  margin: 0 auto;
+  border: 3px solid #f7f1df;
+  border-top: 0;
+  background: linear-gradient(90deg, #8b8377, #d6cfbf 50%, #837b70);
+}
+
+.monitor-base {
+  width: 44%;
+  height: 42px;
+  margin: 0 auto;
+  border: 3px solid #f7f1df;
+  border-radius: 12px 12px 28px 28px;
+  background: linear-gradient(#d8d0c0, #8d857b);
+}
+
+@media (max-width: 760px) {
+  .desktop {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .museum-home {
+    padding-top: 28px;
+  }
+
+  .home-title {
+    font-size: 30px;
+  }
+
+  .screen-frame {
+    padding: 8px;
+    border-width: 2px;
+    border-radius: 14px;
+  }
+
+  .screen {
+    min-height: auto;
+    border-width: 3px;
+    border-radius: 10px;
+  }
+
+  .desktop {
+    grid-template-columns: 1fr;
+    padding: 14px 12px 78px;
+  }
+
+  .desktop-icon {
+    grid-template-columns: 48px 1fr;
+    justify-items: start;
+    align-items: center;
+    min-height: 72px;
+    text-align: left;
+  }
+
+  .desktop-icon-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .taskbar {
+    grid-template-columns: auto 1fr;
+  }
+
+  .clock,
+  .monitor-neck,
+  .monitor-base {
+    display: none;
+  }
+}

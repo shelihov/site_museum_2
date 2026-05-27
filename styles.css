@@ -51,6 +51,14 @@ header h1 {
   margin: 0;
 }
 
+.h1_link {
+  color: var(--page-color);
+  text-decoration: none;
+}
+.h1_link:hover {
+  color: #789cf1;
+}
+
 .header_top{
   display: flex;
   justify-content: space-between;
@@ -102,12 +110,21 @@ nav ul li {
 }
 nav ul li a {
   display: flex;
+  align-items: center;
+  gap: 8px;
   width: 100%;
   min-height: 32px;
   box-sizing: border-box;
   padding: 10px 14px;
   color: var(--page-color);
   text-decoration: none;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  image-rendering: pixelated;
 }
 
 nav ul li:hover {
@@ -557,11 +574,38 @@ a.exhibit {
   padding-top: 14px;
 }
 
+.footer_halls {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(56px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.footer_halls a {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid color-mix(in srgb, var(--page-color) 34%, transparent);
+  border-radius: 8px;
+  color: var(--page-color);
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+}
+
 .footer_block li a {
   text-decoration: none;
   color: darkgreen;
 }
 
-.footer_block li a:hover {
+.footer_block li a:hover,
+.footer_halls a:hover {
   color: #789cf1;
+}
+
+@media (max-width: 700px) {
+  .footer_halls {
+    grid-template-columns: repeat(3, minmax(56px, 1fr));
+  }
 }

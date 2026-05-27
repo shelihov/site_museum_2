@@ -3,6 +3,12 @@
   --page-padding: 24px;
   --page-width: 1200px;
   --page-color: #51a55e;
+  --terminal-bg: #171a18;
+  --terminal-panel: rgba(7, 12, 9, 0.82);
+  --terminal-panel-solid: #0a0f0c;
+  --terminal-border: rgba(81, 165, 94, 0.52);
+  --terminal-accent: #8fb4ff;
+  --terminal-muted: #9bc7a1;
 }
 
 * {
@@ -14,8 +20,8 @@
 body {
   width: 100%;
   height: 100%;
-  --color: rgba(114, 114, 114, 0.3);
-  background-color: #191a1a;
+  --color: rgba(81, 165, 94, 0.12);
+  background-color: var(--terminal-bg);
   background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
   background-size: 55px 55px;
@@ -37,8 +43,9 @@ main {
 }
 #header > header {
   display: block;
-  background-color: #0c0d18b7;
+  background-color: rgba(7, 12, 9, 0.9);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--terminal-border);
   padding: 12px; 
 }
 
@@ -56,7 +63,7 @@ header h1 {
   text-decoration: none;
 }
 .h1_link:hover {
-  color: #789cf1;
+  color: var(--terminal-accent);
 }
 
 .header_top{
@@ -71,9 +78,12 @@ header h1 {
 
 .burger {
   display: block;
-  background: none;
-  border: none;
-  font-size: 24px;
+  min-width: 38px;
+  min-height: 34px;
+  background: var(--terminal-panel-solid);
+  border: 1px solid var(--terminal-border);
+  border-radius: 4px;
+  font-size: 22px;
   color: var(--page-color);
   cursor: pointer;
 }
@@ -101,11 +111,12 @@ nav ul {
 }
 
 nav ul li {
-  border: 1px solid color-mix(in srgb, var(--page-color) 46%, transparent);
-  border-radius: 12px;
+  border: 1px solid var(--terminal-border);
+  border-radius: 4px;
   list-style: none;
   overflow: hidden;
-  transition: 0.3s;
+  background: rgba(7, 12, 9, 0.72);
+  transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease;
   font-size: 15px;
 }
 nav ul li a {
@@ -128,13 +139,12 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background-color: rgb(0, 0, 0);
-  transform: translateY(-2px);
-  border: 1px solid #789cf1;
+  background-color: rgba(143, 180, 255, 0.1);
+  border-color: var(--terminal-accent);
 }
 
 nav ul li:hover a {
-  color: #789cf1;
+  color: var(--terminal-accent);
 }
 
 
@@ -147,12 +157,13 @@ nav ul li:hover a {
 .hall-title {
   text-align: center;
   padding: 56px 0 12px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 12px rgba(81, 165, 94, 0.24);
 }
 
 .hall-about {
   text-align: center;
   padding: 0 0 56px;
+  color: var(--terminal-muted);
 }
 
 .exhibits_hall {
@@ -168,11 +179,11 @@ a.exhibit {
 .exhibit {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--page-color);
-  border-radius: 12px;
+  border: 1px solid var(--terminal-border);
+  border-radius: 6px;
   overflow: hidden;
   padding: 15px;
-  background-color: #0b060c;
+  background-color: var(--terminal-panel);
 }
 
 .exhibit span {
@@ -183,7 +194,8 @@ a.exhibit {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border: 1px solid rgba(81, 165, 94, 0.25);
+  border-radius: 4px;
 }
 
 .exhibit h3 {
@@ -195,12 +207,9 @@ a.exhibit {
 }
 
 .exhibit:hover {
-  background-color: #0b060c;
-  transform: translateY(-4px);
-  transition: 0.3s;
-  border: 1px solid #789cf1;
-  box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.591);
-  color: #789cf1;
+  background-color: rgba(8, 18, 14, 0.94);
+  border-color: var(--terminal-accent);
+  color: var(--terminal-accent);
 }
 
 
@@ -262,10 +271,10 @@ a.exhibit {
   gap: 24px;
 }
 .exhibit_text{
-  background-color: #0b060c70;
+  background-color: var(--terminal-panel);
   padding: 24px;
-  border: 1px solid color-mix(in srgb, var(--page-color) 45%, transparent);
-  border-radius: 20px;
+  border: 1px solid var(--terminal-border);
+  border-radius: 6px;
 }
 .exhibit_text h3 {
   padding-bottom: 10px;
@@ -282,7 +291,8 @@ a.exhibit {
 .exhibit_media img, .exhibit_media iframe {
   width: 100%;
   display: block;
-  border-radius: 16px;
+  border: 1px solid rgba(81, 165, 94, 0.28);
+  border-radius: 6px;
 }
 
 .exhibit_media iframe {
@@ -290,11 +300,11 @@ a.exhibit {
   border: 0;
 }
 .generation-container {
-  border: 1px solid var(--page-color);
-  border-radius: 12px;
+  border: 1px solid var(--terminal-border);
+  border-radius: 6px;
   overflow: hidden;
   padding: 15px;
-  background-color: #0b060c87;
+  background-color: var(--terminal-panel);
   margin-bottom: 40px;
 }
 .h3_generation {
@@ -329,21 +339,23 @@ a.exhibit {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 6px;
 }
 
 .slider-description {
   margin-top: 12px;
   font-size: 16px;
   text-align: center;
+  color: var(--terminal-muted);
 }
 
 .slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.631);
-  color: #fff;
+  border: 1px solid var(--terminal-border);
+  background-color: rgba(7, 12, 9, 0.82);
+  color: var(--page-color);
   padding: 10px;
   cursor: pointer;
 }
@@ -379,6 +391,7 @@ a.exhibit {
   max-width: 90%;
   max-height: 90%;
   text-align: center;
+  color: var(--page-color);
 }
 
 .slider-modal-image {
@@ -387,6 +400,7 @@ a.exhibit {
   max-height: 90vh;
   margin: 0 auto;
   object-fit: contain;
+  border: 1px solid var(--terminal-border);
 }
 
 .slider-modal-btn {
@@ -395,8 +409,9 @@ a.exhibit {
   width: 50px;
   height: 50px;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.631);
-  color: #fff;
+  border: 1px solid var(--terminal-border);
+  background-color: rgba(7, 12, 9, 0.82);
+  color: var(--page-color);
   padding: 10px;
   cursor: pointer;
 }
@@ -434,9 +449,9 @@ a.exhibit {
   max-width: 860px;
   margin: 56px auto 0;
   padding: 24px;
-  border: 1px solid color-mix(in srgb, var(--page-color) 45%, transparent);
-  border-radius: 20px;
-  background-color:  #0b060c70;
+  border: 1px solid var(--terminal-border);
+  border-radius: 6px;
+  background-color: var(--terminal-panel);
 }
 
 .exhibit_quiz h3 {
@@ -447,9 +462,9 @@ a.exhibit {
 .quiz{
   display: grid;
   gap: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  background-color:  #0b060c7a;
+  border: 1px solid rgba(81, 165, 94, 0.2);
+  border-radius: 6px;
+  background-color: rgba(7, 12, 9, 0.72);
 }
 
 .quiz_question {
@@ -485,10 +500,10 @@ a.exhibit {
 }
 
 .quiz_button {
-  border: 1px solid var(--page-color);
-  border-radius: 12px;
+  border: 1px solid var(--terminal-border);
+  border-radius: 4px;
   padding: 12px 14px;
-  background: transparent;
+  background: rgba(7, 12, 9, 0.72);
   color: var(--page-color);
   font: inherit;
   cursor: pointer;
@@ -521,7 +536,7 @@ a.exhibit {
   text-decoration: none;
 }
 .exhibit_sources li a:hover {
-  color: #789cf1;
+  color: var(--terminal-accent);
 }
 
 .exhibit_div_buttons {
@@ -531,19 +546,20 @@ a.exhibit {
 .exhibit_buttons_prev_next {
   display: inline-block;
   padding: 10px 20px;
-  color: #51a55e;
+  color: var(--page-color);
   text-decoration: none;
-  border: 1px solid #51a55e;
-  border-radius: 12px;
+  border: 1px solid var(--terminal-border);
+  border-radius: 4px;
+  background: rgba(7, 12, 9, 0.72);
   text-align: center;
-  transition: background 0.3s, ease, transform 0.3s ease;
+  transition: border-color 0.18s ease, color 0.18s ease, background-color 0.18s ease;
 }
 .exhibit_buttons_prev_next:hover, 
 .exhibit_buttons_prev_next:focus {
-  color: #789cf1;
-  border: 1px solid #789cf1;
+  color: var(--terminal-accent);
+  border-color: var(--terminal-accent);
+  background: rgba(143, 180, 255, 0.1);
   outline: none;
-  transform: translateY(-2px);
 }
 .exhibit_button_prev_next:active {
     background: #1c4a65;
@@ -558,7 +574,8 @@ a.exhibit {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  background-color: #0b060c8b;
+  border-top: 1px solid var(--terminal-border);
+  background-color: rgba(7, 12, 9, 0.88);
   margin-top: 56px;
 }
 
@@ -586,8 +603,8 @@ a.exhibit {
   justify-items: center;
   gap: 6px;
   padding: 8px;
-  border: 1px solid color-mix(in srgb, var(--page-color) 34%, transparent);
-  border-radius: 8px;
+  border: 1px solid var(--terminal-border);
+  border-radius: 4px;
   color: var(--page-color);
   text-align: center;
   text-decoration: none;
@@ -601,7 +618,7 @@ a.exhibit {
 
 .footer_block li a:hover,
 .footer_halls a:hover {
-  color: #789cf1;
+  color: var(--terminal-accent);
 }
 
 @media (max-width: 700px) {
